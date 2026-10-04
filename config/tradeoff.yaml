@@ -1,0 +1,83 @@
+# Real-unit trade-off metrics for one reference campus.
+# Change numbers here; formulas live in src/score/metrics.py.
+
+campus:
+  it_mw: 100
+  load_factor: 0.8                 # IT energy = 100 * 8760 * 0.8 = 700,800 MWh/yr
+  pue: {base: 1.10, per_cdd: 0.00012, max: 1.40}     # judgment: PUE rises with cooling degree days
+  wue_l_per_kwh_it: {base: 0.10, per_cdd: 0.0002, max: 0.60}   # judgment: on-site water rises with heat
+
+reference_fips: "53015"            # Cowlitz WA, used for "what changed" comparisons
+min_score: 0.60                    # default floor when the objective is a metric (not score); None / omit to turn off
+
+# Unit / direction / label only. Adding a display metric later is a yaml edit.
+# `better: lower` means minimize (and constraints default to <=). `higher` means maximize (>=).
+metrics:
+  pue:
+    label: "PUE (judgment assumption)"
+    unit: "ratio"
+    better: lower
+  wue:
+    label: "WUE (judgment assumption, on-site L/kWh IT)"
+    unit: "L/kWh IT"
+    better: lower
+  facility_mwh:
+    label: "Facility energy"
+    unit: "MWh/yr"
+    better: lower
+  co2_t:
+    label: "CO2 (long-run marginal, 2035)"
+    unit: "tCO2/yr"
+    better: lower
+  co2_avg_grid_t:
+    label: "CO2 (today's average grid, reference only)"
+    unit: "tCO2/yr"
+    better: lower
+  water_ml:
+    label: "Water (direct + grid-indirect)"
+    unit: "million L/yr"
+    better: lower
+  water_stress_2050:
+    label: "Water stress 2050"
+    unit: "0-5"
+    better: lower
+  energy_cost_musd:
+    label: "Energy cost (electricity only; excludes land and construction)"
+    unit: "$M/yr"
+    better: lower
+  time_to_power_yrs:
+    label: "Time to power"
+    unit: "years"
+    better: lower
+  power:
+    label: "Power pillar"
+    unit: "0-1"
+    better: higher
+  carbon:
+    label: "Carbon pillar"
+    unit: "0-1"
+    better: higher
+  water:
+    label: "Water pillar"
+    unit: "0-1"
+    better: higher
+  hazard:
+    label: "Hazard pillar"
+    unit: "0-1"
+    better: higher
+  permission:
+    label: "Permission pillar"
+    unit: "0-1"
+    better: higher
+  land:
+    label: "Land pillar"
+    unit: "0-1"
+    better: higher
+  cobenefit:
+    label: "Co-benefit pillar"
+    unit: "0-1"
+    better: higher
+  score:
+    label: "Overall score (geometric mean, base weights)"
+    unit: "0-1"
+    better: higher

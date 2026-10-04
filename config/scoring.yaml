@@ -224,20 +224,14 @@ manual_adjustments:
   pnw_constrained_ttp:
     years: 6
     basis: constrained_judgment
-    utility_ids: [4442, 3660, 1579, 6716, 15500, 18429, 17470, 15248]
-    utilities:
-      - {id: 4442, name: "PUD No 1 of Cowlitz County"}
-      - {id: 3660, name: "PUD No 1 of Clark County - (WA)"}
-      - {id: 1579, name: "PUD No 1 of Benton County"}
-      - {id: 6716, name: "PUD No 1 of Franklin County"}
-      - {id: 15500, name: "Puget Sound Energy Inc"}
-      - {id: 18429, name: "City of Tacoma - (WA)"}
-      - {id: 17470, name: "PUD No 1 of Snohomish County"}
-      - {id: 15248, name: "Portland General Electric"}
+    gea: NorthernGrid_West
+    column: crb_cambium_gea
+    large_load_price_cents_kwh: 7.75   # national median industrial price; new large loads, not embedded tariff
     source: >
       BPA load requests ~65 GW vs 11-12 GW typical; Cowlitz PUD says BPA cannot
       process its transmission queue in time; no published wait time. Judgment
-      value between national 4 and Dominion 7.
+      value between national 4 and Dominion 7. Applied to every county in
+      Cambium GEA NorthernGrid_West (WA/OR), not just the original eight utilities.
   tax_status_overrides:
     "53015": not_eligible   # Cowlitz County, WA — does not qualify for WA DC tax break
     "53011": not_eligible   # Clark County, WA — does not qualify for WA DC tax break

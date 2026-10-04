@@ -9,7 +9,7 @@
 
 - Share of top 100 with `lbl_dc_existing_n` > 0: **50.0%** (50 / 100)
 - Base rate among surviving counties: **7.7%**
-- Spearman correlation(score, `lbl_dc_existing_n`): **0.294**
+- Spearman correlation(score, `lbl_dc_existing_n`): **0.295**
 
 Hub counties (Step 1 list):
 
@@ -17,10 +17,10 @@ Hub counties (Step 1 list):
 - Prince William VA (`51153`): legacy rank 45, score 0.764, existing DCs 55
 - Maricopa AZ (`04013`): legacy rank 20, score 0.782, existing DCs 56
 - Dallas TX (`48113`): legacy rank 24, score 0.779, existing DCs 25
-- Polk IA (`19153`): legacy rank 205, score 0.706, existing DCs 7
-- Pottawattamie IA (`19155`): legacy rank 43, score 0.764, existing DCs 18
-- Licking OH (`39089`): legacy rank 246, score 0.698, existing DCs 27
-- Grant WA (`53025`): legacy rank 184, score 0.712, existing DCs 15
+- Polk IA (`19153`): legacy rank 204, score 0.706, existing DCs 7
+- Pottawattamie IA (`19155`): legacy rank 42, score 0.764, existing DCs 18
+- Licking OH (`39089`): legacy rank 247, score 0.698, existing DCs 27
+- Grant WA (`53025`): legacy rank 253, score 0.697, existing DCs 15
 - Laramie WY (`56021`): excluded (Extreme water stress)
 
 ### Top 10 (legacy)
@@ -36,7 +36,7 @@ Hub counties (Step 1 list):
     7        Will County    IL        0.807  0.859   0.499  0.533       0.595   0.714 0.790      0.450
     8     Chester County    PA        0.805  0.823   0.339  0.567       0.665   0.758 0.808      0.117
     9    Cuyahoga County    OH        0.799  0.842   0.259  0.680       0.753   0.789 0.739      0.266
-   10       Wayne County    MI        0.793  0.817   0.503  0.820       0.618   0.740 0.791      0.362
+   10      Pierce County    WA        0.795  0.819   0.639  0.880       0.804   0.726 0.802      0.190
 ```
 
 ## 2. Contested projects vs permission (contested feature removed)
@@ -146,16 +146,16 @@ Counties removed by **too little candidate land** (51), with `cand_land_km2`:
 
 ```
  rank             county state  final_score  power  carbon  water  permission  hazard  land  cobenefit
-    1     Cowlitz County    WA        0.680  0.694   0.595  0.843       0.811   0.697 0.733      0.419
-    2      Benton County    WA        0.668  0.652   0.771  0.762       0.790   0.640 0.680      0.355
-    3     Whatcom County    WA        0.667  0.605   0.672  0.846       0.835   0.718 0.751      0.335
+    1     Cowlitz County    WA        0.675  0.668   0.595  0.843       0.811   0.697 0.733      0.419
+    2     Whatcom County    WA        0.670  0.618   0.672  0.846       0.835   0.718 0.751      0.335
+    3      Benton County    WA        0.666  0.643   0.771  0.762       0.790   0.640 0.680      0.355
     4        Linn County    IA        0.665  0.762   0.562  0.728       0.790   0.648 0.729      0.418
     5       Mayes County    OK        0.664  0.834   0.642  0.682       0.855   0.390 0.752      0.423
-    6      Pierce County    WA        0.661  0.755   0.639  0.880       0.804   0.726 0.802      0.190
+    6      Pierce County    WA        0.662  0.763   0.639  0.880       0.804   0.726 0.802      0.190
     7 Rock Island County    IL        0.661  0.800   0.593  0.670       0.712   0.762 0.839      0.315
     8      Dallas County    TX        0.660  0.858   0.662  0.608       0.701   0.529 0.820      0.383
     9     Calhoun County    MI        0.653  0.659   0.569  0.635       0.790   0.748 0.691      0.527
-   10      Monroe County    MI        0.651  0.751   0.579  0.797       0.618   0.709 0.739      0.379
+   10   Multnomah County    OR        0.652  0.718   0.717  0.880       0.748   0.753 0.716      0.180
 ```
 
 ### legacy
@@ -171,23 +171,23 @@ Counties removed by **too little candidate land** (51), with `cand_land_km2`:
     7        Will County    IL        0.807  0.859   0.499  0.533       0.595   0.714 0.790      0.450
     8     Chester County    PA        0.805  0.823   0.339  0.567       0.665   0.758 0.808      0.117
     9    Cuyahoga County    OH        0.799  0.842   0.259  0.680       0.753   0.789 0.739      0.266
-   10       Wayne County    MI        0.793  0.817   0.503  0.820       0.618   0.740 0.791      0.362
+   10      Pierce County    WA        0.795  0.819   0.639  0.880       0.804   0.726 0.802      0.190
 ```
 
 ### carbon-first
 
 ```
  rank           county state  final_score  power  carbon  water  permission  hazard  land  cobenefit
-    1    Benton County    WA        0.705  0.652   0.771  0.762       0.790   0.640 0.680      0.355
-    2 Multnomah County    OR        0.701  0.703   0.717  0.880       0.748   0.753 0.716      0.180
-    3   Whatcom County    WA        0.692  0.605   0.672  0.846       0.835   0.718 0.751      0.335
-    4    Pierce County    WA        0.689  0.755   0.639  0.880       0.804   0.726 0.802      0.190
-    5      Lane County    OR        0.687  0.647   0.718  0.821       0.833   0.698 0.686      0.198
-    6 Clackamas County    OR        0.686  0.705   0.684  0.851       0.789   0.688 0.761      0.185
-    7    Yakima County    WA        0.686  0.684   0.727  0.796       0.742   0.615 0.755      0.246
-    8     Clark County    WA        0.685  0.732   0.644  0.878       0.769   0.791 0.759      0.175
-    9   Cowlitz County    WA        0.679  0.694   0.595  0.843       0.811   0.697 0.733      0.419
-   10  Kittitas County    WA        0.679  0.703   0.750  0.735       0.866   0.558 0.807      0.167
+    1    Benton County    WA        0.704  0.643   0.771  0.762       0.790   0.640 0.680      0.355
+    2 Multnomah County    OR        0.704  0.718   0.717  0.880       0.748   0.753 0.716      0.180
+    3   Whatcom County    WA        0.694  0.618   0.672  0.846       0.835   0.718 0.751      0.335
+    4    Pierce County    WA        0.690  0.763   0.639  0.880       0.804   0.726 0.802      0.190
+    5 Clackamas County    OR        0.688  0.718   0.684  0.851       0.789   0.688 0.761      0.185
+    6     Clark County    WA        0.682  0.710   0.644  0.878       0.769   0.791 0.759      0.175
+    7      Lane County    OR        0.682  0.613   0.718  0.821       0.833   0.698 0.686      0.198
+    8    Yakima County    WA        0.680  0.644   0.727  0.796       0.742   0.615 0.755      0.246
+    9      King County    WA        0.679  0.723   0.658  0.816       0.742   0.758 0.833      0.183
+   10  Kittitas County    WA        0.677  0.690   0.750  0.735       0.866   0.558 0.807      0.167
 ```
 
 ### cost-first
@@ -195,40 +195,41 @@ Counties removed by **too little candidate land** (51), with `cand_land_km2`:
 ```
  rank               county state  final_score  power  carbon  water  permission  hazard  land  cobenefit
     1   Rock Island County    IL        0.728  0.800   0.593  0.670       0.712   0.762 0.839      0.315
-    2        Dallas County    TX        0.721  0.858   0.662  0.608       0.701   0.529 0.820      0.383
-    3        Pierce County    WA        0.720  0.755   0.639  0.880       0.804   0.726 0.802      0.190
+    2        Pierce County    WA        0.723  0.763   0.639  0.880       0.804   0.726 0.802      0.190
+    3        Dallas County    TX        0.721  0.858   0.662  0.608       0.701   0.529 0.820      0.383
     4         Wayne County    MI        0.719  0.802   0.503  0.820       0.618   0.740 0.791      0.362
     5         Mayes County    OK        0.714  0.834   0.642  0.682       0.855   0.390 0.752      0.423
     6          Linn County    IA        0.713  0.762   0.562  0.728       0.790   0.648 0.729      0.418
     7         Lucas County    OH        0.712  0.794   0.266  0.836       0.731   0.720 0.719      0.509
     8 Pottawattamie County    IA        0.711  0.826   0.553  0.649       0.789   0.603 0.757      0.277
     9       Dauphin County    PA        0.710  0.802   0.350  0.766       0.773   0.659 0.741      0.372
-   10       Cowlitz County    WA        0.707  0.694   0.595  0.843       0.811   0.697 0.733      0.419
+   10         Scott County    IA        0.707  0.752   0.465  0.794       0.781   0.691 0.815      0.262
 ```
 
 ### community-first
 
 ```
  rank           county state  final_score  power  carbon  water  permission  hazard  land  cobenefit
-    1   Cowlitz County    WA        0.653  0.694   0.595  0.843       0.811   0.697 0.733      0.419
+    1   Cowlitz County    WA        0.649  0.668   0.595  0.843       0.811   0.697 0.733      0.419
     2   Calhoun County    MI        0.645  0.659   0.569  0.635       0.790   0.748 0.691      0.527
     3      Linn County    IA        0.634  0.762   0.562  0.728       0.790   0.648 0.729      0.418
     4 Muscatine County    IA        0.632  0.710   0.486  0.698       0.808   0.669 0.740      0.480
     5     Macon County    IL        0.632  0.698   0.529  0.702       0.684   0.655 0.608      0.567
-    6    Benton County    WA        0.630  0.652   0.771  0.762       0.790   0.640 0.680      0.355
+    6   Whatcom County    WA        0.632  0.618   0.672  0.846       0.835   0.718 0.751      0.335
     7     Huron County    MI        0.630  0.769   0.596  0.621       0.776   0.767 0.416      0.467
-    8   Whatcom County    WA        0.630  0.605   0.672  0.846       0.835   0.718 0.751      0.335
-    9     Mayes County    OK        0.629  0.834   0.642  0.682       0.855   0.390 0.752      0.423
-   10  Franklin County    WA        0.622  0.543   0.713  0.766       0.785   0.667 0.634      0.406
+    8     Mayes County    OK        0.629  0.834   0.642  0.682       0.855   0.390 0.752      0.423
+    9    Benton County    WA        0.629  0.643   0.771  0.762       0.790   0.640 0.680      0.355
+   10  Woodbury County    IA        0.622  0.777   0.443  0.786       0.789   0.567 0.648      0.464
 ```
 
 ## Manual adjustments
 
 These are judgment values, not published interconnection waits or statutory county tax codes.
 
-- **PNW time-to-power = 6 years**, `basis=constrained_judgment` for: PUD No 1 of Cowlitz County (4442), PUD No 1 of Clark County - (WA) (3660), PUD No 1 of Benton County (1579), PUD No 1 of Franklin County (6716), Puget Sound Energy Inc (15500), City of Tacoma - (WA) (18429), PUD No 1 of Snohomish County (17470), Portland General Electric (15248).
-  Source: BPA load requests ~65 GW vs 11-12 GW typical; Cowlitz PUD says BPA cannot process its transmission queue in time; no published wait time. Judgment value between national 4 and Dominion 7.
+- **PNW time-to-power = 6 years**, `basis=constrained_judgment` for every county with `crb_cambium_gea` == `NorthernGrid_West` (**75** rows in this table).
+  Source: BPA load requests ~65 GW vs 11-12 GW typical; Cowlitz PUD says BPA cannot process its transmission queue in time; no published wait time. Judgment value between national 4 and Dominion 7. Applied to every county in Cambium GEA NorthernGrid_West (WA/OR), not just the original eight utilities.
+- **Large-load industrial price = 7.75 ¢/kWh** (national median) on the same counties. Applied to the power-pillar price feature and to `energy_cost_musd` (electricity only; not an embedded tariff).
 - **Tax status overrides** (`not_eligible` → 0.2): 53015=not_eligible, 53011=not_eligible.
   Source: Washington's data center sales-tax exemption is site- and qualification-based. Cowlitz (53015) and Clark (53011) are treated as not_eligible (score 0.2), not unknown (0.5).
-- Sensitivities (not the base table): PNW wait at 5 and 7 years; replace industrial price scores for those utilities' counties with the national-median price score.
+- Sensitivities (not the base table): PNW wait at 5 and 7 years; replace industrial price scores for the same region with the national-median price score.
 

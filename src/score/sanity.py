@@ -16,24 +16,46 @@ from src.score.score import (
 )
 
 
-def _manual_adjustment_lines(cfg: dict) -> list[str]:
+def _manual_adjustment_lines(cfg: dict, df: pd.DataFrame | None = None) -> list[str]:
     adj = cfg.get("manual_adjustments") or {}
     ttp = adj.get("pnw_constrained_ttp") or {}
-    names = ", ".join(f"{u['name']} ({u['id']})" for u in ttp.get("utilities", []))
+    gea = ttp.get("gea")
+    col = ttp.get("column", "crb_cambium_gea")
+    n_gea = None
+    if df is not None:
+        if "pwr_time_to_power_source" in df.columns:
+            n_gea = int((df["pwr_time_to_power_source"].astype(str) == str(ttp.get("basis", "constrained_judgment"))).sum())
+        elif col in df.columns and gea:
+            n_gea = int((df[col].astype(str) == str(gea)).sum())
+    scope = (
+        f"every county with `{col}` == `{gea}`"
+        + (f" (**{n_gea}** rows in this table)" if n_gea is not None else "")
+        if gea else
+        ", ".join(f"{u['name']} ({u['id']})" for u in ttp.get("utilities", [])) or "see utility_time_to_power.csv"
+    )
+    price = ttp.get("large_load_price_cents_kwh")
     tax = adj.get("tax_status_overrides") or {}
     tax_rows = ", ".join(f"{str(k).zfill(5)}={v}" for k, v in tax.items())
-    return [
+    lines = [
         "These are judgment values, not published interconnection waits or statutory county tax codes.",
         "",
         f"- **PNW time-to-power = {ttp.get('years', 6)} years**, `basis={ttp.get('basis', 'constrained_judgment')}` "
-        f"for: {names or 'see utility_time_to_power.csv'}.",
+        f"for {scope}.",
         f"  Source: {(ttp.get('source') or '').strip()}",
+    ]
+    if price is not None:
+        lines.append(
+            f"- **Large-load industrial price = {float(price):g} ¢/kWh** (national median) on the same counties. "
+            "Applied to the power-pillar price feature and to `energy_cost_musd` (electricity only; not an embedded tariff)."
+        )
+    lines += [
         f"- **Tax status overrides** (`not_eligible` → 0.2): {tax_rows or '(none)'}.",
         f"  Source: {(adj.get('tax_status_source') or '').strip()}",
         "- Sensitivities (not the base table): PNW wait at 5 and 7 years; replace industrial price "
-        "scores for those utilities' counties with the national-median price score.",
+        "scores for the same region with the national-median price score.",
         "",
     ]
+    return lines
 
 
 def _top_block(df: pd.DataFrame, n: int = 10) -> str:
@@ -239,7 +261,7 @@ def run_sanity(cfg: dict, path=None, nri_note: str = "") -> tuple[str, str]:
         *persona_blocks,
         "## Manual adjustments",
         "",
-        *_manual_adjustment_lines(cfg),
+        *_manual_adjustment_lines(cfg, df),
     ]
     text = (
         f"Legacy top-100 existing-DC share: {share:.1%} (base rate among survivors {base_rate:.1%})\n"

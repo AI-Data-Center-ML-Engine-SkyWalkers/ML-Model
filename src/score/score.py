@@ -56,8 +56,19 @@ def weight_vector(cfg: dict, weights: dict | None = None) -> pd.Series:
     return w / total
 
 
-def pnw_judgment_fips(cfg: dict) -> set[str]:
-    ids = set(int(x) for x in (cfg.get("manual_adjustments") or {}).get("pnw_constrained_ttp", {}).get("utility_ids", []))
+def pnw_judgment_fips(cfg: dict, df: pd.DataFrame | None = None) -> set[str]:
+    ttp = (cfg.get("manual_adjustments") or {}).get("pnw_constrained_ttp") or {}
+    gea = ttp.get("gea")
+    col = ttp.get("column", "crb_cambium_gea")
+    src = df
+    if gea and (src is None or col not in getattr(src, "columns", [])):
+        if FEATURES_PATH.exists():
+            src = pd.read_parquet(FEATURES_PATH, columns=["fips", col])
+        else:
+            src = None
+    if gea and src is not None and col in src.columns:
+        return set(src.loc[src[col].astype(str) == str(gea), "fips"].astype(str).str.zfill(5))
+    ids = set(int(x) for x in ttp.get("utility_ids", []))
     if not ids:
         return set()
     path = INTERIM / "_utility_county_map.parquet"
@@ -75,7 +86,7 @@ def apply_manual_adjustments(df: pd.DataFrame, cfg: dict, ttp_years: float | Non
         out.loc[out["fips"] == str(fips).zfill(5), "prm_tax_exemption_status"] = status
     ttp = adj.get("pnw_constrained_ttp") or {}
     ids = {int(x) for x in ttp.get("utility_ids", [])}
-    fips = pnw_judgment_fips(cfg)
+    fips = pnw_judgment_fips(cfg, out)
     if not fips and ids and "pwr_main_utility_id" in out.columns:
         uid = pd.to_numeric(out["pwr_main_utility_id"], errors="coerce")
         fips = set(out.loc[uid.isin(ids), "fips"].astype(str))
@@ -84,7 +95,12 @@ def apply_manual_adjustments(df: pd.DataFrame, cfg: dict, ttp_years: float | Non
         hit = out["fips"].isin(fips)
         out.loc[hit, "pwr_time_to_power_yrs"] = years
         out.loc[hit, "pwr_time_to_power_source"] = ttp.get("basis", "constrained_judgment")
-        print(f"[score] PNW constrained TTP = {years:g} yrs on {int(hit.sum())} counties")
+        print(f"[score] PNW constrained TTP = {years:g} yrs on {int(hit.sum())} counties"
+              + (f" ({ttp['gea']})" if ttp.get("gea") else ""))
+        price = ttp.get("large_load_price_cents_kwh")
+        if price is not None:
+            out.loc[hit, "pwr_ind_price_cents_kwh"] = float(price)
+            print(f"[score] PNW large-load price = {float(price):g} c/kWh on {int(hit.sum())} counties")
     if adj.get("tax_status_overrides"):
         print(f"[score] tax overrides: {adj['tax_status_overrides']}")
     return out
