@@ -1,0 +1,50 @@
+state_abbr,statewide_moratorium,tax_exemption_status,large_load_tariff,county_zoning_authority,verified,source_url,notes
+AL,0,unknown,0,1,0,,"Not researched: moratorium 0, tariff 0 and county zoning 1 are defaults; verify"
+AZ,0,paused,1,1,1,https://www.constructionowners.com/insights/data-center-tax-incentives-state-by-state-whos-still-giving-whos-taking-back,Sales tax exemption paused Jul 2026 to Jun 2029 (verify); SRP E-67 80% minimum bill is utility-level; county zoning assumed 1
+AR,0,unknown,0,1,0,,"Not researched: moratorium 0, tariff 0 and county zoning 1 are defaults; verify"
+CA,0,unknown,0,1,0,,"Not researched: moratorium 0, tariff 0 and county zoning 1 are defaults; verify"
+CO,0,unknown,0,1,0,,"Not researched: moratorium 0, tariff 0 and county zoning 1 are defaults; verify"
+CT,0,unknown,0,1,0,,"Not researched: moratorium 0, tariff 0 and county zoning 1 are defaults; verify"
+DE,0,unknown,0,1,0,,"Not researched: moratorium 0, tariff 0 and county zoning 1 are defaults; verify"
+DC,0,unknown,0,1,0,,"Not researched: moratorium 0, tariff 0 and county zoning 1 are defaults; verify"
+FL,0,unknown,1,1,1,https://floridaphoenix.com/2026/03/13/florida-senate-half-heartedly-agrees-to-final-ok-for-weakened-data-center-bill/,SB 484: 50 MW+ pay own utility costs; signing not independently confirmed; county zoning assumed 1
+GA,0,active,1,1,1,https://www.datacenterfrontier.com/energy/article/55263580/georgia-follows-ohios-lead-in-moving-energy-costs-to-data-centers,2024 pause bill vetoed; exemption runs to 2033; PSC rule: 100 MW+ pay T&D costs; county zoning assumed 1
+ID,0,unknown,0,1,0,,"Not researched: moratorium 0, tariff 0 and county zoning 1 are defaults; verify"
+IL,0,paused,0,1,1,https://www.constructionowners.com/insights/data-center-tax-incentives-state-by-state-whos-still-giving-whos-taking-back,"Data Center Investment Program suspended 2 years from Jul 1 2026 (secondary source, verify); county zoning assumed 1"
+IN,0,unknown,0,1,0,,"Not researched: moratorium 0, tariff 0 and county zoning 1 are defaults; verify"
+IA,0,unknown,0,1,0,,"Not researched: moratorium 0, tariff 0 and county zoning 1 are defaults; verify"
+KS,0,unknown,0,1,0,,"Not researched: moratorium 0, tariff 0 and county zoning 1 are defaults; verify"
+KY,0,unknown,0,1,0,,"Not researched: moratorium 0, tariff 0 and county zoning 1 are defaults; verify"
+LA,0,unknown,0,1,0,,"Not researched: moratorium 0, tariff 0 and county zoning 1 are defaults; verify"
+ME,0,unknown,0,1,1,https://mainemorningstar.com/2026/04/29/despite-initial-support-legislature-fails-to-override-mills-veto-of-landmark-data-center-ban/,Legislature passed 20 MW+ ban; veto override failed Apr 29 2026; county zoning assumed 1
+MD,0,unknown,0,1,0,,"Not researched: moratorium 0, tariff 0 and county zoning 1 are defaults; verify"
+MA,0,unknown,0,1,0,,"Not researched: moratorium 0, tariff 0 and county zoning 1 are defaults; verify"
+MI,0,unknown,0,1,0,,"Not researched: moratorium 0, tariff 0 and county zoning 1 are defaults; verify"
+MN,0,unknown,0,1,0,,"Not researched: moratorium 0, tariff 0 and county zoning 1 are defaults; verify"
+MS,0,unknown,0,1,0,,"Not researched: moratorium 0, tariff 0 and county zoning 1 are defaults; verify"
+MO,0,unknown,0,1,0,,"Not researched: moratorium 0, tariff 0 and county zoning 1 are defaults; verify"
+MT,0,unknown,0,1,0,,"Not researched: moratorium 0, tariff 0 and county zoning 1 are defaults; verify"
+NE,0,unknown,0,1,0,,"Not researched: moratorium 0, tariff 0 and county zoning 1 are defaults; verify"
+NV,0,unknown,0,1,0,,"Not researched: moratorium 0, tariff 0 and county zoning 1 are defaults; verify"
+NH,0,unknown,0,1,0,,"Not researched: moratorium 0, tariff 0 and county zoning 1 are defaults; verify"
+NJ,0,paused,0,1,1,https://www.constructionowners.com/insights/data-center-tax-incentives-state-by-state-whos-still-giving-whos-taking-back,Froze Next New Jersey AI credits (verify); county zoning assumed 1
+NM,0,unknown,0,1,0,,"Not researched: moratorium 0, tariff 0 and county zoning 1 are defaults; verify"
+NY,1,active,0,1,1,https://www.route-fifty.com/artificial-intelligence/2026/07/new-york-governor-signs-nations-first-moratorium-large-data-centers/414752/,Statewide EO Jul 14 2026 pauses permits for 50 MW+ for ~1 year; governor promised to repeal tax exemptions; county zoning assumed 1
+NC,0,active,0,1,1,https://www.constructionowners.com/insights/data-center-tax-incentives-state-by-state-whos-still-giving-whos-taking-back,Phase-out of exemption proposed (possible 2032 sunset); county zoning assumed 1
+ND,0,unknown,0,1,0,,"Not researched: moratorium 0, tariff 0 and county zoning 1 are defaults; verify"
+OH,0,paused,1,1,1,https://www.powermag.com/regulator-approves-aep-ohios-landmark-data-center-tariff/,Governor told Tax Credit Authority to stop new applications; AEP Ohio 85% minimum-demand tariff (utility-level); county zoning assumed 1
+OK,0,unknown,1,1,1,https://www.constructionowners.com/insights/data-center-tax-incentives-state-by-state-whos-still-giving-whos-taking-back,"HB 2992 Data Center Consumer Ratepayer Protection Act, effective Jul 1 2026; county zoning assumed 1"
+OR,0,unknown,0,1,0,,"Not researched: moratorium 0, tariff 0 and county zoning 1 are defaults; verify"
+PA,0,unknown,0,1,1,https://insideclimatenews.org/news/02072026/pennsylvania-coal-town-data-center-moratorium/,"SB 1359 proposed 3-year moratorium (Jun 2026), not passed as of research; county zoning assumed 1"
+RI,0,unknown,0,1,0,,"Not researched: moratorium 0, tariff 0 and county zoning 1 are defaults; verify"
+SC,0,unknown,0,1,0,,"Not researched: moratorium 0, tariff 0 and county zoning 1 are defaults; verify"
+SD,0,unknown,1,1,1,https://datacenterwatch.substack.com/p/briefing-03272026,SB 135 / HB 1038 (Mar 2026): 10 MW+ cover system costs; local authority preserved; county zoning assumed 1
+TN,0,unknown,0,1,0,,"Not researched: moratorium 0, tariff 0 and county zoning 1 are defaults; verify"
+TX,0,unknown,1,0,1,https://www.ksat.com/news/texas/2026/06/02/eight-data-centers-threaten-to-transform-this-small-texas-county-local-officials-say-they-have-no-power-to-stop-them/,Counties lack general zoning authority; SB 6 large-load rules; Aug 2026 governor-ordered interconnection audit
+UT,0,unknown,0,1,0,,"Not researched: moratorium 0, tariff 0 and county zoning 1 are defaults; verify"
+VT,0,unknown,0,1,0,,"Not researched: moratorium 0, tariff 0 and county zoning 1 are defaults; verify"
+VA,0,active,1,1,1,https://datacenterwatch.substack.com/p/briefing-08122026,Exemption debated in 2026; SCC ordered data centers to pay transmission costs; county zoning assumed 1
+WA,0,unknown,0,1,0,,"Not researched: moratorium 0, tariff 0 and county zoning 1 are defaults; verify"
+WV,0,unknown,0,1,0,,"Not researched: moratorium 0, tariff 0 and county zoning 1 are defaults; verify"
+WI,0,unknown,0,1,0,,"Not researched: moratorium 0, tariff 0 and county zoning 1 are defaults; verify"
+WY,0,unknown,0,1,0,,"Not researched: moratorium 0, tariff 0 and county zoning 1 are defaults; verify"

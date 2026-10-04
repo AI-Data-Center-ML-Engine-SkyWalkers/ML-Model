@@ -1,0 +1,61 @@
+project_name,developer,fips,state_abbr,mw,usd_bn,year,outcome,main_reason,source_url
+Prince William Digital Gateway,QTS / Compass,51153,VA,,24.7,2026,abandoned,Rezoning voided over public-notice defect; next to Manassas battlefield,https://virginiabusiness.com/prince-william-digital-gateway-data-center-project-officially-dies/
+Dulles South Innovation Center,,51153,VA,,,2026,abandoned,Comprehensive plan amendment denied by county board,https://www.potomaclocal.com/tag/data-centers/page/2/
+Mountain Road Technology Park,Tract,51085,VA,900,,2026,abandoned,"Rezoning rejected 4-3: water, traffic, noise, rural land",https://datacenterwatch.substack.com/p/briefing-07132026
+Loudoun 3.25M sq ft campus,,51107,VA,,,2026,abandoned,"Rejected; single source, developer not named",https://datacenterwatch.substack.com/p/briefing-08122026
+Balico campus,Balico,51143,VA,300,,2025,abandoned,Withdrawn before rezoning vote; 3.5 GW gas plant air pollution,https://datacenterdynamics.com/en/news/plan-for-gas-powered-data-center-campus-in-pittsylvania-county-virginia-withdrawn-again
+AWS Warrenton,Amazon,51061,VA,,,2023,approved_over_opposition,SUP passed 4-3; lawsuit; anti-data-center council elected,https://www.princewilliamtimes.com/town-council-to-take-on-data-centers-in-2025/article_d48bd34d-2522-543e-84af-5845811b41b2.html
+Catlett Station,Headwaters,51061,VA,,0.4,2024,abandoned,Withdrawn,https://datacenterwatch.org/report
+Culpeper Acquisitions campus,Culpeper Acquisitions,51047,VA,,12,2024,delayed,"Denied at planning, deferred",https://datacenterwatch.org/report
+Brandy Station campus,AttoTek,51047,VA,,,2022,abandoned,"Withdrawn after planning denial recommendation: noise, visual impact",https://datacenterdynamics.com/en/news/application-for-brandy-station-data-center-park-withdrawn-in-virginia
+Richmond campus,DC Blox,51760,VA,,0.5,2024,relocated,"Withdrawn, smaller plan refiled",https://datacenterwatch.org/report
+King George campus,Amazon,51099,VA,,6,2025,delayed,Renegotiation,https://datacenterwatch.org/report
+Project Hercules,Avaio,51011,VA,50,,2026,delayed,"Early opposition, no rezoning vote yet",https://datacenterwatch.substack.com/p/briefing-03272026
+Harper Road Technology Park,Diode Ventures,29037,MO,,1.5,2024,abandoned,Peculiar removed data centers from zoning,https://datacenterdynamics.com/en/news/peculiar-officials-in-missouri-remove-data-centers-from-ordinance-blocking-15bn-diode-project
+Project Cumulus,CRG Cumulus LLC,29183,MO,,,2025,abandoned,"NDA backlash, floodplain, wellfield; city moratorium then ban",https://spectrumlocalnews.com/mo/st-louis/news/2025/08/22/st-charles-data-center-moratorium
+Festus campus,CRG Clayco,29099,MO,,6,2026,approved_over_opposition,Approved; incumbents lost election; lawsuit,https://www.stlpr.org/government-politics-issues/2026-04-08/6b-data-center-festus-voters-oust-every-incumbent-council-member
+Project Blue,Beale Infrastructure,04019,AZ,,,2025,relocated,Tucson rejected annexation over water; Pima County approved,https://www.kjzz.org/community-outrage-shut-down-project-blue-data-center-project-in-tucson-but-its-not-dead-yet
+Chandler rezoning Price and Dobson,,04013,AZ,,,2025,abandoned,Rezoning unanimously rejected,https://www.axios.com/local/phoenix/2025/12/16/chandler-rejects-sinema-ai-data-center
+Goodyear/Buckeye campus,Tract,04013,AZ,,14,2024,relocated,"Withdrawn, new project nearby",https://datacenterwatch.org/report
+Project Baccara,Takanock,04013,AZ,,36,2026,approved_over_opposition,Approved near Luke AFB over Air Force objection,https://coppercourier.com/news/politics/project-baccara-greenlit/
+Chesterton campus,Provident Realty Advisors,18127,IN,,1.3,2024,abandoned,"Air, water, wetlands, property values",https://baxtel.com/news/provident-realty-advisors-withdraws-proposal-for-indiana-data-center
+Valparaiso campus,Agincourt,18127,IN,,,2025,abandoned,"City halted: noise, parkland conversion",https://www.lakeshorepublicmedia.org/local-news/2025-03-11/valpo-pulls-plug-on-data-center-proposal-following-public-opposition
+Union Township campus,QTS,18127,IN,,2,2025,abandoned,"Near high school, no community engagement",https://www.datacenterdynamics.com/en/news/qts-cans-data-center-scheme-in-porter-county-indiana-after-protests/
+Burns Harbor campus,Provident Realty Advisors,18127,IN,,,2024,abandoned,Petition withdrawn,https://datacenterwatch.org/report
+Franklin Township campus,Google,18097,IN,,,2025,abandoned,"Withdrawn before council vote: water, electric bills, farmland",https://mirrorindy.org/google-withdraws-southside-data-center-proposal-franklin-township/
+Bolingbroke Technology Center,,13207,GA,1200,5.8,2025,abandoned,Rezoning unanimously denied,https://www.datacenterdynamics.com/en/news/land-rezoning-proposal-denied-for-12gw-campus-outside-macon-georgia/
+Stillwater Technology Park,Stillwater Development,13063,GA,1250,13,2026,abandoned,Withdrawn; between two schools (aggregator source),https://hoodline.com/2026/08/lovejoy-kills-400-acre-data-center-plan-vows-to-ban-them-for-good/
+Project Sail,Prologis,13077,GA,900,17,2026,delayed,"Triggered county moratorium, later approved",https://www.wsbtv.com/news/local/coweta-county/our-doorstep-coweta-county-passes-180-day-moratorium-data-center-proposals-after-2-approved/NEHIXSMQEVEZPFKA4K4IWSEQ24/
+Fayetteville business park,Corvus Investment Group,13113,GA,,,2026,abandoned,Rezoning denied by planning commission,https://datacenterwatch.substack.com/p/briefing-01302026
+Project Scott,Provident (Archbald I LLC),42069,PA,,,2026,abandoned,Conditional use denied after notice error,https://www.desmog.com/2026/03/31/archbald-pennsylvania-residents-vote-no-data-center-provident-realty-advisors/
+Project Hazelnut,NorthPoint Development,42079,PA,,,2025,delayed,Rejected on procedure; under appeal; moratorium,https://insideclimatenews.org/news/02072026/pennsylvania-coal-town-data-center-moratorium/
+Saline Township campus,Related Digital,26161,MI,,,2025,approved_over_opposition,"Denied, developer sued, township settled",https://planetdetroit.org/2025/10/saline-data-center-settlement/
+Howell Township campus,,26093,MI,,1,2025,delayed,"Moratorium, rezoning withdrawn, resubmission expected",https://www.datacenterdynamics.com/en/news/proposal-for-data-center-in-howell-township-michigan-has-been-withdrawn/
+Project Flex,Verrus / Walbridge,26125,MI,,,2026,approved_over_opposition,Approved; recall of all trustees launched,https://planetdetroit.org/2026/01/lyon-township-data-center-plan/
+U-M / Los Alamos computing center,University of Michigan,26161,MI,,1.25,2026,delayed,Township resolved to oppose,https://planetdetroit.org/2026/04/ypsilanti-township-escalates-data-center-fight/
+Lansing campus,Deep Green,26065,MI,,,2026,abandoned,Withdrawn,https://datacenterwatch.substack.com/p/briefing-04102026
+Project Nova,Microsoft,55101,WI,,,2025,relocated,Halted after community feedback; seeking other Racine County sites,https://dailyreporter.com/2025/10/08/microsoft-caledonia-data-center-halted-racine-county/
+Port Washington campus,Vantage,55089,WI,,15,2026,approved_over_opposition,Recall failed; incentive referendum passed,https://techspot.com/news/112035-wisconsin-city-becomes-first-vote-against-future-data.html
+Farmington campus,Tract,27037,MN,,5,2026,approved_over_opposition,"Injunction, then approved; suit dropped",https://blandinonbroadband.org/2026/09/09/coalition-for-responsible-data-center-development-withdraws-lawsuit-due-in-farmington-to-litigation-costs-dakota-county/
+Pine Island campus,Ryan Cos.,27049,MN,,,2026,delayed,Court halted construction over environmental review,https://www.mncenter.org/legal-updates-mceas-data-center-cases
+Hermantown campus,Harmony Group,27137,MN,,,2026,delayed,Environmental review redo; secrecy,https://www.mncenter.org/legal-updates-mceas-data-center-cases
+College Station campus,Priority Power Management,48041,TX,600,,2025,abandoned,City land sale rejected; NDA backlash,https://www.datacenterdynamics.com/en/news/college-station-texas-rejects-land-sale-for-data-center/
+San Marcos rezoning,,48209,TX,,,2026,abandoned,Rezoning rejected over water; city ban,https://www.citizen.org/news/across-texas-grassroots-resistance-meets-the-ai-data-center-boom/
+Project Patriot,,48221,TX,,,2026,approved_over_opposition,Rezoned; residents sued,https://www.insurancejournal.com/news/southcentral/2026/05/21/870978.htm
+xAI Colossus 1,xAI,47157,TN,300,,2025,approved_over_opposition,Gas turbine air permit litigation,https://tennesseelookout.com/briefs/naacp-others-appeal-xai-turbine-permits-for-memphis-data-center/
+xAI Colossus 2,xAI,28033,MS,1200,,2026,approved_over_opposition,Clean Air Act lawsuit over turbines,https://www.selc.org/news/xai-built-an-illegal-power-plant-to-power-its-data-center/
+Cascade Locks campus,Roundhouse Digital,41027,OR,10,0.1,2023,abandoned,Officials recalled,https://www.bisnow.com/news/national/data-center/local-opposition-kills-100m-oregon-data-center-119928
+Monterey Park campus,HMC StratCap,06037,CA,50,,2026,abandoned,Withdrawn; voter-enacted ban,https://www.datacenterknowledge.com/build-design/california-city-approves-first-voter-enacted-data-center-ban
+Project Jarvis,,12111,FL,1000,13.5,2026,abandoned,Withdrawn ahead of state law SB 484,https://www.datacenterdynamics.com/en/news/data-center-developer-withdraws-application-in-florida-in-response-to-proposed-regulations/
+Okee-One,,12093,FL,10,,2026,abandoned,"Zoning removed, state funding withdrawn",https://datacenterwatch.substack.com/p/briefing-05012026
+Project Lincoln,Western Hospitality Partners,21185,KY,600,6,2025,relocated,Moved to industrial site and downsized,https://www.datacenterdynamics.com/en/news/planned-data-center-project-in-kentuckys-oldham-county-relocated-and-downsized-amid-backlash/
+Simpson County campus,TenKey LandCo,21213,KY,,5,2026,delayed,Developer sued county over new ordinance,https://datacenterwatch.substack.com/p/briefing-01302026
+Project Spero,TigerDC,45083,SC,100,3,2026,abandoned,Tax deal soured,https://www.datacenterdynamics.com/en/news/tigerdc-pulls-planned-data-center-project-from-south-carolina-county-after-officials-deny-tax-deal/
+Colleton County campus,,45029,SC,,,2026,delayed,"State delegation resolution, lawsuit; ACE Basin watershed",https://www.wsav.com/news/local-news/colleton-county-delegation-resolved-to-stop-data-center-construction/amp/
+Mooresville campus,Tract,37097,NC,,,2025,abandoned,Withdrawn after opposition,https://www.datacenterdynamics.com/en/news/tract-pulls-plans-for-north-carolina-data-center-on-land-formerly-owned-by-nascar-legend-dale-earnhardt/
+Wake County campus,Natelli Investments,37183,NC,250,,2026,abandoned,Withdrawn,https://fortune.com/2026/06/16/data-center-opposition-construction-delays-blocks-report/
+Preble County campus,PRSM,39135,OH,,,2025,abandoned,Ag-to-industrial rezoning withdrawn,https://www.datacenterdynamics.com/en/news/application-for-data-center-in-preble-county-ohio-withdrawn/
+Bristolville 25,,39155,OH,,,2025,delayed,Village moratorium; developer suing,https://spectrumnews1.com/oh/columbus/news/2026/02/24/lordstown-ohio-data-center-lawsuit
+Ashville campus,EdgeConneX,39129,OH,,,2026,approved_over_opposition,Referendum blocked; Ohio Supreme Court case,https://hoodline.com/2026/07/ashville-showdown-locals-drag-blocked-data-center-vote-to-ohio-s-high-court/
+Butler County campus,Amazon,39017,OH,,,2026,delayed,Townships rejected annexation,https://spectrumnews1.com/oh/columbus/news/2026/08/27/leaders-turn-down-millions-reject-annexation-plan-for-amazon-data-center
+Pocatello campus,Lex Developments,16005,ID,100,2.6,2026,delayed,Denied by hearing examiner; tribal ceded-land opposition,https://baxtel.com/news/first-nation-opposes-proposed-ai-data-center-in-pocatello-idaho

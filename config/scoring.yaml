@@ -1,0 +1,258 @@
+# Scoring engine config. Change numbers here; do not edit src/score/.
+
+exclusions:
+  - id: protected_land
+    label: Protected land
+    column: lnd_pct_protected
+    op: ">"
+    value: 50
+  - id: active_county_moratorium
+    label: Active county moratorium
+    column: prm_moratorium_active
+    op: "=="
+    value: 1
+  - id: statewide_moratorium
+    label: Statewide moratorium
+    column: prm_state_moratorium
+    op: "=="
+    value: 1
+  - id: too_little_candidate_land
+    label: Too little candidate land
+    column: cand_land_km2
+    op: "<"
+    value: 5
+  - id: far_from_grid
+    label: Far from the grid
+    column: pwr_dist_hv230_line_km
+    op: ">"
+    value: 50
+  - id: extreme_hurricane
+    label: Extreme hurricane
+    column: haz_eal_hurricane
+    op: ">"
+    value: 97
+  - id: extreme_coastal_flood
+    label: Extreme coastal flood
+    column: haz_eal_coastal_flood
+    op: ">"
+    value: 97
+  - id: extreme_water_stress
+    label: Extreme water stress
+    all:
+      - {column: wtr_bws_score, op: ">=", value: 4.5}
+      - {column: wtr_bws_2050_score, op: ">=", value: 4.5}
+
+computed:
+  - name: cand_land_km2
+    sum: [lnd_pct_buildable, lnd_pct_cropland]
+    scale: 0.01
+    times: meta_land_area_km2
+  - name: prm_contested_total
+    sum: [prm_contested_n, prm_contested_neighbors_n]
+  - name: cob_heat_demand
+    product: [cob_hdd_annual, cob_pct_fossil_heat]
+    scale: 0.01
+
+features:
+  - {col: pwr_ind_price_cents_kwh, pillar: power, direction: lower, lo: 4, hi: 15, weight: 1}
+  - {col: pwr_saidi_min, pillar: power, direction: lower, lo: 0, hi: 600, weight: 1}
+  - {col: pwr_dist_hv230_line_km, pillar: power, direction: lower, lo: 0, hi: 50, weight: 1}
+  - {col: pwr_dist_hv345_line_km, pillar: power, direction: lower, lo: 0, hi: 100, weight: 1}
+  - {col: pwr_substations_230kv_n, pillar: power, direction: higher, lo: 0, hi: 20, transform: log, weight: 1}
+  - {col: pwr_time_to_power_yrs, pillar: power, direction: lower, lo: 2, hi: 9, weight: 1}
+  - {col: pwr_dist_retired_plant_km, pillar: power, direction: lower, lo: 0, hi: 100, weight: 1}
+
+  - {col: crb_lrmer_2035_kg_mwh, pillar: carbon, direction: lower, lo: 0, hi: 300, weight: 2}
+  - {col: crb_grid_co2_kg_mwh, pillar: carbon, direction: lower, lo: 100, hi: 700, weight: 1}
+  - {col: crb_wind_cf, pillar: carbon, direction: higher, lo: 0.2, hi: 0.5, weight: 0.5}
+  - {col: crb_solar_cf, pillar: carbon, direction: higher, lo: 0.13, hi: 0.26, weight: 0.5}
+  - {col: crb_clean_gen_mw, pillar: carbon, direction: higher, lo: 0, hi: 2000, transform: log, weight: 0.5}
+  - {col: crb_queue_clean_mw, pillar: carbon, direction: higher, lo: 0, hi: 10000, transform: log, weight: 0.5}
+
+  - {col: wtr_bws_score, pillar: water, direction: lower, lo: 0, hi: 5, weight: 1}
+  - {col: wtr_bws_2050_score, pillar: water, direction: lower, lo: 0, hi: 5, weight: 1}
+  - {col: wtr_grid_water_l_kwh, pillar: water, direction: lower, lo: 0, hi: 1.5, weight: 1}
+  - {col: wtr_drought_d2plus_pct_weeks, pillar: water, direction: lower, lo: 0, hi: 60, weight: 1}
+  - {col: wtr_wwtp_flow_mgd, pillar: water, direction: higher, lo: 0, hi: 100, transform: log, weight: 1}
+
+  - {col: haz_alr_riverine_flood, pillar: hazard, direction: lower, lo: 0, hi: 100, weight: 1, fallback: haz_eal_riverine_flood}
+  - {col: haz_alr_wildfire, pillar: hazard, direction: lower, lo: 0, hi: 100, weight: 1, fallback: haz_eal_wildfire}
+  - {col: haz_alr_earthquake, pillar: hazard, direction: lower, lo: 0, hi: 100, weight: 1, fallback: haz_eal_earthquake}
+  - {col: haz_alr_tornado, pillar: hazard, direction: lower, lo: 0, hi: 100, weight: 1, fallback: haz_eal_tornado}
+  - {col: haz_alr_hurricane, pillar: hazard, direction: lower, lo: 0, hi: 100, weight: 1, fallback: haz_eal_hurricane}
+  - {col: haz_alr_coastal_flood, pillar: hazard, direction: lower, lo: 0, hi: 100, weight: 1, fallback: haz_eal_coastal_flood}
+  - {col: haz_days_gt95f_2050, pillar: hazard, direction: lower, lo: 0, hi: 120, weight: 1}
+  - {col: haz_cdd_annual, pillar: hazard, direction: lower, lo: 0, hi: 4000, weight: 1}
+  - {col: haz_karst_exposed_pct, pillar: hazard, direction: lower, lo: 0, hi: 100, weight: 0.5}
+
+  - {col: lnd_pct_buildable, pillar: land, direction: higher, lo: 0, hi: 50, weight: 1}
+  - {col: lnd_dist_ixp_km, pillar: land, direction: lower, lo: 0, hi: 300, weight: 1}
+  - {col: lnd_dist_interstate_km, pillar: land, direction: lower, lo: 0, hi: 50, weight: 1}
+  - {col: lnd_dist_brownfield_or_retired_km, pillar: land, direction: lower, lo: 0, hi: 50, weight: 1}
+  - {col: lnd_dist_eaf_steel_km, pillar: land, direction: lower, lo: 0, hi: 500, weight: 1}
+  - {col: lnd_dist_cement_km, pillar: land, direction: lower, lo: 0, hi: 300, weight: 1}
+
+  - {col: prm_moratorium_active, pillar: permission, direction: lower, lo: 0, hi: 1, weight: 1}
+  - {col: prm_moratorium_proposed, pillar: permission, direction: lower, lo: 0, hi: 1, weight: 1}
+  - {col: prm_contested_total, pillar: permission, direction: lower, lo: 0, hi: 5, weight: 1}
+  - {col: prm_nonattainment, pillar: permission, direction: lower, lo: 0, hi: 1, weight: 1}
+  - {col: prm_pct_tribal, pillar: permission, direction: lower, lo: 0, hi: 50, weight: 1}
+  - {col: prm_price_growth_pct, pillar: permission, direction: lower, lo: 0, hi: 40, weight: 1}
+  - {col: lnd_pct_cropland, pillar: permission, direction: lower, lo: 0, hi: 80, weight: 1}
+  - {col: prm_pop_density_km2, pillar: permission, direction: lower, lo: 10, hi: 2000, transform: log, weight: 1}
+  - col: prm_tax_exemption_status
+    pillar: permission
+    weight: 1
+    map:
+      active: 1.0
+      unknown: 0.5
+      paused: 0.2
+      not_eligible: 0.2
+      repealed: 0.0
+      none: 0.0
+  - col: prm_county_can_zone
+    pillar: permission
+    weight: 0.5
+    map:
+      0: 1.0
+      1: 0.6
+
+  - {col: cob_unemp_rate, pillar: cobenefit_econ, direction: higher, lo: 2, hi: 10, weight: 1}
+  - {col: cob_poverty_pct, pillar: cobenefit_econ, direction: higher, lo: 5, hi: 30, weight: 1}
+  - {col: cob_energy_community, pillar: cobenefit_econ, direction: higher, lo: 0, hi: 1, weight: 1}
+  - {col: cob_persistent_poverty, pillar: cobenefit_econ, direction: higher, lo: 0, hi: 1, weight: 1}
+
+  - {col: cob_heat_demand, pillar: cobenefit_heat, direction: higher, lo: 0, hi: 6000, weight: 1}
+  - {col: cob_ghgrp_combustion_facilities_n, pillar: cobenefit_heat, direction: higher, lo: 0, hi: 10, transform: log, weight: 1}
+  - {col: cob_lowtemp_ind_heat_tbtu, pillar: cobenefit_heat, direction: higher, lo: 0, hi: 5, transform: log, weight: 1}
+
+pillars: [power, carbon, water, permission, hazard, land, cobenefit]
+
+cobenefit_mix:
+  cobenefit_econ: 0.6
+  cobenefit_heat: 0.4
+
+weights:
+  power: 0.22
+  carbon: 0.18
+  water: 0.15
+  permission: 0.15
+  hazard: 0.10
+  land: 0.10
+  cobenefit: 0.10
+
+geo_mean_floor: 0.01
+sparse_fraction: 0.5
+survive_warn_below: 500
+
+veto:
+  floor: 0.15
+  pillars: [power, carbon, water, permission, hazard, land]
+
+hubs:
+  - {fips: "51107", name: "Loudoun VA"}
+  - {fips: "51153", name: "Prince William VA"}
+  - {fips: "04013", name: "Maricopa AZ"}
+  - {fips: "48113", name: "Dallas TX"}
+  - {fips: "19153", name: "Polk IA"}
+  - {fips: "19155", name: "Pottawattamie IA"}
+  - {fips: "39089", name: "Licking OH"}
+  - {fips: "53025", name: "Grant WA"}
+  - {fips: "56021", name: "Laramie WY"}
+
+personas:
+  base:
+    power: 0.22
+    carbon: 0.18
+    water: 0.15
+    permission: 0.15
+    hazard: 0.10
+    land: 0.10
+    cobenefit: 0.10
+  legacy:
+    power: 0.50
+    carbon: 0.00
+    water: 0.00
+    permission: 0.00
+    hazard: 0.20
+    land: 0.30
+    cobenefit: 0.00
+  carbon-first:
+    power: 0.15
+    carbon: 0.35
+    water: 0.20
+    permission: 0.10
+    hazard: 0.10
+    land: 0.05
+    cobenefit: 0.05
+  cost-first:
+    power: 0.40
+    carbon: 0.05
+    water: 0.10
+    permission: 0.15
+    hazard: 0.10
+    land: 0.15
+    cobenefit: 0.05
+  community-first:
+    power: 0.15
+    carbon: 0.15
+    water: 0.15
+    permission: 0.20
+    hazard: 0.10
+    land: 0.05
+    cobenefit: 0.20
+
+robustness:
+  seed: 42
+  n_samples: 1000
+  nudged_alpha_scale: 50
+
+tradeoff:
+  floor_pct: 50
+
+nri_alr:
+  path: data/raw/fema_nri/NRI_Table_Counties.csv
+  columns:
+    RFLD_ALR_NPCTL: haz_alr_riverine_flood
+    WFIR_ALR_NPCTL: haz_alr_wildfire
+    ERQK_ALR_NPCTL: haz_alr_earthquake
+    TRND_ALR_NPCTL: haz_alr_tornado
+    HRCN_ALR_NPCTL: haz_alr_hurricane
+    CFLD_ALR_NPCTL: haz_alr_coastal_flood
+
+manual_adjustments:
+  pnw_constrained_ttp:
+    years: 6
+    basis: constrained_judgment
+    utility_ids: [4442, 3660, 1579, 6716, 15500, 18429, 17470, 15248]
+    utilities:
+      - {id: 4442, name: "PUD No 1 of Cowlitz County"}
+      - {id: 3660, name: "PUD No 1 of Clark County - (WA)"}
+      - {id: 1579, name: "PUD No 1 of Benton County"}
+      - {id: 6716, name: "PUD No 1 of Franklin County"}
+      - {id: 15500, name: "Puget Sound Energy Inc"}
+      - {id: 18429, name: "City of Tacoma - (WA)"}
+      - {id: 17470, name: "PUD No 1 of Snohomish County"}
+      - {id: 15248, name: "Portland General Electric"}
+    source: >
+      BPA load requests ~65 GW vs 11-12 GW typical; Cowlitz PUD says BPA cannot
+      process its transmission queue in time; no published wait time. Judgment
+      value between national 4 and Dominion 7.
+  tax_status_overrides:
+    "53015": not_eligible   # Cowlitz County, WA — does not qualify for WA DC tax break
+    "53011": not_eligible   # Clark County, WA — does not qualify for WA DC tax break
+  tax_status_source: >
+    Washington's data center sales-tax exemption is site- and qualification-based.
+    Cowlitz (53015) and Clark (53011) are treated as not_eligible (score 0.2),
+    not unknown (0.5).
+
+exclusion_groups:
+  feasibility:
+    label: feasibility (land, grid, protected)
+    rules: [too_little_candidate_land, far_from_grid, protected_land]
+  sustainability_risk:
+    label: sustainability/risk (water, hurricane, coastal flood)
+    rules: [extreme_water_stress, extreme_hurricane, extreme_coastal_flood]
+  policy:
+    label: policy (moratoria)
+    rules: [active_county_moratorium, statewide_moratorium]

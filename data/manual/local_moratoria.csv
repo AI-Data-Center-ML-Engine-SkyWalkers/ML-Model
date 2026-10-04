@@ -1,0 +1,32 @@
+fips,jurisdiction_name,jurisdiction_type,status,start_date,end_date,source_url,notes
+13097,Douglas County GA,county,expired,2025-03,2025-06,https://www.govtech.com/products/second-atlanta-area-government-hits-pause-on-data-centers,90 days
+13077,Coweta County GA,county,expired,2025-05-12,2025-11,https://www.wsbtv.com/news/local/coweta-county/our-doorstep-coweta-county-passes-180-day-moratorium-data-center-proposals-after-2-approved/NEHIXSMQEVEZPFKA4K4IWSEQ24/,180 days
+13089,DeKalb County GA,county,expired,2025-07-09,2025-10,https://www.wsbtv.com/news/local/dekalb-county/dekalb-county-approves-100-day-moratorium-data-center-applications-permits/H2K5IN25NBFKZLHESW3E7WD334,100 days; check for extension
+13063,Clayton County GA,county,active,2025-09,2026-12,https://www.govtech.com/products/second-atlanta-area-government-hits-pause-on-data-centers,Extended through 2026
+13063,Lovejoy GA,city,proposed,2026-08,,https://hoodline.com/2026/08/lovejoy-kills-400-acre-data-center-plan-vows-to-ban-them-for-good/,Mayor says city will ban; aggregator source
+13285,Troup County GA,county,expired,,,https://www.govtech.com/products/second-atlanta-area-government-hits-pause-on-data-centers,"90-day pause; dates unknown, verify"
+29183,St. Charles MO,city,active,2026-05-19,,https://grha.org/blogs/news/floodplain-win-st-charles-city-council-votes-to-ban-data-centers-within-city-limits,Permanent ban after 2025 moratorium
+21185,Oldham County KY,county,expired,2025-07-01,2025-11,https://www.datacenterdynamics.com/en/news/kentuckys-oldham-county-passes-150-day-data-center-moratorium/,150 days
+26093,Howell Township MI,township,expired,2025-11,,https://www.datacenterdynamics.com/en/news/proposal-for-data-center-in-howell-township-michigan-has-been-withdrawn/,"Status unknown, verify"
+39155,Lordstown OH,city,expired,2025-11,2026-05,https://spectrumnews1.com/oh/columbus/news/2026/02/24/lordstown-ohio-data-center-lawsuit,180 days; litigation
+42079,Hazle Township PA,township,active,2026-06-08,2026-12-05,https://insideclimatenews.org/news/02072026/pennsylvania-coal-town-data-center-moratorium/,180 days
+48217,Hill County TX,county,active,2026-05,2027-05,https://www.argusmedia.com/en/news-and-insights/latest-market-news/2832636-local-opposition-builds-to-texas-data-centers,1 year; developers sued
+48209,San Marcos TX,city,active,2026-06-30,,https://www.ksat.com/news/texas/2026/06/02/eight-data-centers-threaten-to-transform-this-small-texas-county-local-officials-say-they-have-no-power-to-stop-them/,Ban
+48061,Harlingen TX,city,active,,,https://www.argusmedia.com/en/news-and-insights/latest-market-news/2832636-local-opposition-builds-to-texas-data-centers,"Temporary ban; dates unknown, verify"
+53033,Seattle WA,city,active,2026-06-09,2027-06-09,https://datacenterwatch.substack.com/p/briefing-07132026,"1 year, over 20 MW"
+27053,Minneapolis MN,city,active,2026-06,2026-12,https://gizmodo.com/nearly-200-billion-worth-of-data-center-projects-have-been-blocked-or-delayed-this-year-2000815054,6 months
+37119,Charlotte NC,city,active,2026-06-08,2026-11-05,https://www.constructionowners.com/insights/data-center-tax-incentives-state-by-state-whos-still-giving-whos-taking-back,150 days
+35049,Santa Fe County NM,county,active,2026-06-30,2027-12-30,https://datacenterwatch.substack.com/p/briefing-09242026,18 months
+55031,Superior WI,city,active,2026-06-16,2027-06-16,https://datacenterwatch.substack.com/p/briefing-09242026,1 year
+01117,Harpersville AL,town,active,2026-08-03,2027-02-03,https://datacenterwatch.substack.com/p/briefing-09242026,6 months
+05063,Independence County AR,county,active,2026-08-10,2031-12-31,https://datacenterwatch.substack.com/p/briefing-09242026,Through 2031
+22071,New Orleans LA,county,proposed,2026-01-28,,https://datacenterwatch.substack.com/p/briefing-01302026,"1-year ban advanced; city = parish, so county-wide; verify final vote"
+24009,Calvert County MD,county,active,2026,2028,https://insideclimatenews.org/news/14072026/new-york-first-data-center-moratorium/,2 years; exact dates unknown
+06037,Monterey Park CA,city,active,2026-06-02,,https://www.datacenterknowledge.com/build-design/california-city-approves-first-voter-enacted-data-center-ban,Voter-enacted ban
+41067,Hillsboro OR,city,active,2026-07-28,2026-11-25,https://katu.com/news/local/hillsboro-pauses-new-ai-data-centers-whats-next-over-the-next-120-days-portland-oregon-big-tech-green-environment-climate-change-water-local-community-utilities-money,"120 days, extendable 6 months"
+51107,Loudoun County VA,county,proposed,2026-09,,https://wtop.com/loudoun-county/2026/07/loudoun-county-other-virginia-localities-consider-hitting-the-brakes-on-data-center-development/,Pause under consideration; by-right removed Mar 2025
+51800,Suffolk VA,county,active,,,https://wtop.com/loudoun-county/2026/07/loudoun-county-other-virginia-localities-consider-hitting-the-brakes-on-data-center-development/,"Independent city = own FIPS; paused, dates unknown"
+51187,Front Royal VA,town,proposed,2026,,https://wtop.com/loudoun-county/2026/07/loudoun-county-other-virginia-localities-consider-hitting-the-brakes-on-data-center-development/,Drafting ban
+45083,Spartanburg County SC,county,proposed,2026-09-09,,https://www.foxcarolina.com/2026/09/09/spartanburg-county-hold-special-meeting-controversial-data-centers/,1-year moratorium under consideration
+06025,Imperial County CA,county,proposed,2026,,https://calmatters.org/newsletter/data-center-monterey-park-ban/,Under consideration
+40133,Seminole Nation OK,tribal,active,2026,,https://www.bostonglobe.com/2026/07/09/nation/big-tech-is-now-targeting-native-american-land-massive-data-centers/,Tribal moratorium; county FIPS approximate (Seminole County)

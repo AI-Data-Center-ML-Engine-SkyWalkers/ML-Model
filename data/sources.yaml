@@ -1,0 +1,716 @@
+# Auto-maintained by src/common/io.register_source. One entry per dataset.
+bls_laus:
+  name: BLS Local Area Unemployment Statistics, county annual averages
+  url: https://www.bls.gov/lau/laucnty24.xlsx
+  vintage: '2024'
+  license: Public domain (US Government work)
+  notes: 2025 file exists but is an 11-month average (October 2025 not collected), so 2024 is used. BLS requires
+    a User-Agent with a contact email (env CONTACT_EMAIL).
+  download_date: '2026-10-03'
+  raw_files:
+  - data/raw/bls_laus/laucnty24.xlsx
+bls_qcew:
+  name: BLS QCEW annual averages, NAICS 518210, county level (open data API)
+  url: https://data.bls.gov/cew/data/api/2025/a/industry/518210.csv
+  landing_page: https://www.bls.gov/cew/downloadable-data-files.htm
+  vintage: 2025 annual averages
+  license: Public domain (US BLS)
+  notes: 'Sum of annual average employment across ownership codes (private + government) for agglvl 78. If any ownership
+    row is suppressed (disclosure_code N) the county value is NaN and cob_qcew_dc_emp_suppressed = 1. Counties with
+    no row have no covered establishments: 0 / flag 0. NAICS 518210 = Computing Infrastructure Providers, Data Processing,
+    Web Hosting (NAICS 2022).'
+  download_date: '2026-10-04'
+  raw_files:
+  - data/raw/bls_qcew/2025_a_518210.csv
+bts_interstates:
+  name: BTS NTAD North American Roads (Interstates, CLASS=1)
+  url: https://services.arcgis.com/xOi1kZaI0eWDREZv/arcgis/rest/services/NTAD_North_American_Roads/FeatureServer/0/query?where=COUNTRY=2
+    AND CLASS=1
+  landing_page: https://www.arcgis.com/home/item.html?id=0b6c2fd2e3ac40a7929cdff1d4cf604a
+  vintage: NTAD North American Roads, compiled 2020-10-27 (service data last edited 2025-03-31)
+  license: Public domain (US DOT / BTS)
+  notes: geodata.bts.gov / bts.gov downloads return HTTP 403 from this machine; used the identical NTAD layer hosted
+    on ArcGIS Online by owner USDOT_BTS. CLASS=1 = Interstate (ROADNUM 'IH..'), COUNTRY=2 = USA. 100009 segments.
+    Distance from population-weighted centroid to nearest segment.
+  download_date: '2026-10-04'
+  raw_files:
+  - data/raw/bts_interstates/page_0000.geojson
+  - data/raw/bts_interstates/page_0001.geojson
+  - data/raw/bts_interstates/page_0002.geojson
+  - data/raw/bts_interstates/page_0003.geojson
+  - data/raw/bts_interstates/page_0004.geojson
+  - data/raw/bts_interstates/page_0005.geojson
+  - data/raw/bts_interstates/page_0006.geojson
+  - data/raw/bts_interstates/page_0007.geojson
+  - data/raw/bts_interstates/page_0008.geojson
+  - data/raw/bts_interstates/page_0009.geojson
+  - data/raw/bts_interstates/page_0010.geojson
+  - data/raw/bts_interstates/page_0011.geojson
+  - data/raw/bts_interstates/page_0012.geojson
+  - data/raw/bts_interstates/page_0013.geojson
+  - data/raw/bts_interstates/page_0014.geojson
+  - data/raw/bts_interstates/page_0015.geojson
+  - data/raw/bts_interstates/page_0016.geojson
+  - data/raw/bts_interstates/page_0017.geojson
+  - data/raw/bts_interstates/page_0018.geojson
+  - data/raw/bts_interstates/page_0019.geojson
+cejst_v2:
+  name: Climate and Economic Justice Screening Tool v2.0, communities list (tracts)
+  url: https://web.archive.org/web/20250122234715id_/https://static-data-screeningtool.geoplatform.gov/data-versions/2.0/data/score/downloadable/2.0-communities.csv
+  landing_page: https://screening-tools.com/climate-economic-justice-screening-tool ; https://static-data-screeningtool.geoplatform.gov/data-versions/2.0/data/score/downloadable/2.0-communities.csv
+  mirror: Internet Archive capture 2025-01-22 of the official geoplatform.gov file (host no longer resolves); the
+    screening-tools.com (PEDP) mirror hosts the map but no direct data file
+  vintage: CEJST 2.0 (Dec 2024), 2010 census tracts, ACS 2015-2019 population
+  license: Public domain (CEQ)
+  notes: 'Percent of county ''Total population'' living in tracts with ''Identified as disadvantaged'' = True (includes
+    tribal-overlap and grandfathered tracts, as CEJST''s final flag does). Tracts with missing population are ignored,
+    so 46102 Oglala Lakota (every tract flagged, no population published) is NaN. 2010 geography: CT old counties
+    area-split to planning regions; 46113 and 51515 renamed.'
+  download_date: '2026-10-04'
+  raw_files:
+  - data/raw/cejst/2.0-communities.csv
+census_acs5_2023:
+  name: 'ACS 5-year estimates 2019-2023: B01003, B17001, B19013, B25040'
+  url: https://www2.census.gov/programs-surveys/acs/summary_file/2023/table-based-SF/data/5YRData/acsdt5y2023-<table>.dat
+  vintage: ACS 2019-2023 5-year
+  license: Public domain (US Government work)
+  notes: Retrieved via ACS table-based Summary File (bulk download). CENSUS_API_KEY was not set, so the bulk Summary
+    File (same published estimates) was used. Poverty % uses detailed table B17001 (below poverty / poverty universe),
+    which is the basis of subject table S1701's percent below poverty; S1701 is not in the bulk file. Fossil heat
+    = (utility gas + bottled/LP gas + fuel oil/kerosene) / occupied units.
+  download_date: '2026-10-03'
+  raw_files:
+  - data/raw/acs/acsdt5y2023-b01003.dat
+  - data/raw/acs/acsdt5y2023-b17001.dat
+  - data/raw/acs/acsdt5y2023-b19013.dat
+  - data/raw/acs/acsdt5y2023-b25040.dat
+census_aiannh:
+  name: Census TIGER/Line 2025 American Indian/Alaska Native/Native Hawaiian Areas
+  url: https://www2.census.gov/geo/tiger/TIGER2025/AIANNH/tl_2025_us_aiannh.zip
+  landing_page: https://www.census.gov/geographies/mapping-files/time-series/geo/tiger-line-file.html
+  vintage: TIGER/Line 2025
+  license: Public domain (US Government work)
+  notes: 'prm_pct_tribal = % of county area (cb_2025 500k boundary, incl. inland water) covered by the dissolved
+    union of MTFCC [''G2101'', ''G2102'', ''G2170''] (505 features: federal + state reservations, off-reservation
+    trust land, joint-use areas). Statistical areas excluded. AMBIGUOUS: Oklahoma Tribal Statistical Areas (former
+    reservations; post-McGirt several are reservations in law for some purposes) cover much of eastern Oklahoma
+    - reported separately as prm_pct_ok_tribal_stat_area, not folded into prm_pct_tribal.'
+  download_date: '2026-10-04'
+  raw_files:
+  - data/raw/census_aiannh/tl_2025_us_aiannh.zip
+census_cb_counties:
+  name: Census cartographic boundary counties 1:500k (cb_2025_us_county_500k)
+  url: https://www2.census.gov/geo/tiger/GENZ2025/shp/cb_2025_us_county_500k.zip
+  vintage: '2025'
+  license: Public domain (US Government work)
+  notes: 3109 CONUS+DC counties after dropping AK, HI and territories. CT uses planning regions.
+  download_date: '2026-10-03'
+  raw_files:
+  - data/raw/census/cb_2025_us_county_500k.zip
+census_cb_counties_2020:
+  name: Census cartographic boundary counties 2020 1:500k
+  url: https://www2.census.gov/geo/tiger/GENZ2020/shp/cb_2020_us_county_500k.zip
+  vintage: '2020'
+  license: Public domain (US Government work)
+  notes: Used only to build the Connecticut old-county -> planning-region area crosswalk.
+  download_date: '2026-10-03'
+  raw_files:
+  - data/raw/census/cb_2020_us_county_500k.zip
+census_county_adjacency:
+  name: Census County Adjacency File 2025
+  url: https://www2.census.gov/geo/docs/reference/county-adjacency/county_adjacency2025.txt
+  vintage: '2025'
+  license: Public domain (US Census Bureau)
+  landing_page: https://www.census.gov/geographies/reference-files/time-series/geo/county-adjacency.html
+  notes: Self-adjacency rows dropped. Uses 2025 geography (CT planning regions).
+  download_date: '2026-10-04'
+  raw_files:
+  - data/raw/census_adjacency/county_adjacency2025.txt
+census_pop_centroids:
+  name: Census 2020 centers of population (county; CT block groups)
+  url: https://www2.census.gov/geo/docs/reference/cenpop2020/county/CenPop2020_Mean_CO.txt
+  vintage: 2020 Census
+  license: Public domain (US Government work)
+  notes: CT planning regions have no published centroid; computed with the Census mean-center formula from 2020
+    block-group centers of population (https://www2.census.gov/geo/docs/reference/cenpop2020/blkgrp/CenPop2020_Mean_BG09.txt).
+  download_date: '2026-10-03'
+  raw_files:
+  - data/raw/census/CenPop2020_Mean_CO.txt
+  - data/raw/census/CenPop2020_Mean_BG09.txt
+cmra_2025:
+  name: CMRA Climate Assessment Data (2025 Version) - Counties layer
+  url: https://services3.arcgis.com/0Fs3HcaFfvzXvm7w/arcgis/rest/services/CMRA_Tool_Dev/FeatureServer/0
+  landing_page: https://resilience.climate.gov/ ; https://www.arcgis.com/home/item.html?id=54f4e2343500422bbddf1f5dafb30bbd
+  vintage: CMRA 2025 version (LOCA2 / CMIP6); Census 2019 county geography
+  license: CC BY 4.0 (item license)
+  notes: 'RCP45MID_MEAN_TMAX95F = ensemble-mean annual days with Tmax > 95F, SSP2-4.5 mid-century (field names keep
+    the ''RCP45'' prefix; aliases say SSP2-4.5). All 440 attributes cached to raw for Phase B (delta method). 2019
+    counties: old CT counties area-weighted to planning regions; 46113/51515 fixed.'
+  download_date: '2026-10-04'
+  raw_files:
+  - data/raw/cmra/cmra_counties_2025_all_attributes.json
+eia860:
+  name: EIA-860 Annual Electric Generator Report 2025 (final)
+  url: https://www.eia.gov/electricity/data/eia860/xls/eia8602025.zip
+  landing_page: https://www.eia.gov/electricity/data/eia860/
+  vintage: 2025 final (released 2026-09-10)
+  license: Public domain (US Government work)
+  notes: Operating = status ['OP', 'SB'] (operating + standby). Plant-level nameplate MW joined to counties spatially
+    using plant lat/lon (no name matching). Clean = nuclear, conventional hydro, onshore/offshore wind, solar PV/thermal,
+    geothermal; pumped storage and batteries excluded (storage). 0 plants without coordinates dropped. CONUS total
+    1,350,630 MW.
+  download_date: '2026-10-03'
+  raw_files:
+  - data/raw/eia860/eia8602025.zip
+eia860m:
+  name: EIA-860M Preliminary Monthly Electric Generator Inventory, Retired tab
+  url: https://www.eia.gov/electricity/data/eia860m/xls/august_generator2026.xlsx
+  landing_page: https://www.eia.gov/electricity/data/eia860m/
+  vintage: inventory as of August 2026
+  license: Public domain (US Government work)
+  notes: 'Generators aggregated to plants. pwr_retired_capacity_mw sums all retired nameplate MW per county. Distance
+    uses plants with >= 100 MW total retired. Missing coordinates filled from EIA-860 plant file for 5 plants; 18
+    plants (6,973 MW) still lack coordinates and are excluded. Big plants excluded: [{''Plant ID'': 558, ''name'':
+    ''Haddam Neck'', ''state'': ''CT'', ''mw'': 600.3}, {''Plant ID'': 885, ''name'': ''Zion'', ''state'': ''IL'',
+    ''mw'': 2196.0}, {''Plant ID'': 1517, ''name'': ''Maine Yankee'', ''state'': ''ME'', ''mw'': 920.0}, {''Plant
+    ID'': 1645, ''name'': ''Yankee Rowe'', ''state'': ''MA'', ''mw'': 185.0}, {''Plant ID'': 6107, ''name'': ''Trojan'',
+    ''state'': ''OR'', ''mw'': 1216.0}, {''Plant ID'': 6176, ''name'': ''Rancho Seco'', ''state'': ''CA'', ''mw'':
+    963.0}, {''Plant ID'': 50168, ''name'': ''Geismar Plant'', ''state'': ''LA'', ''mw'': 113.0}, {''Plant ID'':
+    55519, ''name'': ''AES Greystone'', ''state'': ''TN'', ''mw'': 590.4000000000001}]'
+  download_date: '2026-10-03'
+  raw_files:
+  - data/raw/eia860m/august_generator2026.xlsx
+eia861_pudl:
+  name: EIA-861 Annual Electric Power Industry Report (service territory + reliability via Catalyst PUDL stable;
+    sales from raw EIA-861 files)
+  url: https://s3.us-west-2.amazonaws.com/pudl.catalyst.coop/stable/core_eia861__yearly_{service_territory|reliability}.parquet
+    ; https://www.eia.gov/electricity/data/eia861/zip/f8612024.zip ; https://www.eia.gov/electricity/data/eia861/archive/zip/f8612020.zip
+  landing_page: https://data.catalyst.coop ; https://www.eia.gov/electricity/data/eia861/
+  vintage: EIA-861 2024 (final); 2020 for price growth; reliability 2020-2024
+  license: EIA data public domain; PUDL outputs CC-BY-4.0 (Catalyst Cooperative)
+  notes: 'APPROXIMATION: utility service territories list every county a utility serves, not how much. Industrial
+    price = weighted by each utility''s industrial MWh in the state; bundled price = revenue/sales; delivery-only
+    (retail-choice) utilities get their wires charge plus the state''s average energy-only (Part B) industrial price,
+    or, where suppliers report all-in service as Part D retail marketers (Texas), the state''s Part D industrial
+    price. Federal power marketing administrations (WAPA, BPA, SWPA, SEPA) are excluded from price weighting. Sales
+    come from the raw EIA-861 files because PUDL omits Delivery_Companies (Texas TDUs). pwr_saidi_min / pwr_saifi
+    = IEEE standard WITHOUT major event days, median of 2020-2024 per utility-state (over the years it reported),
+    then simple mean across the county''s utilities; *_with_me_latest = IEEE standard WITH major event days, 2024
+    only, same mean. ISO = BA of the county''s largest-sales utility (PJM, ERCO, MISO, SWPP, CISO, NYIS, ISNE; everything
+    else NONE). Price growth = state all-sector revenue/(bundled+energy sales), 2020->2024. CT service territories
+    are on old counties; a utility serving an old county is mapped to every planning region overlapping it.'
+  download_date: '2026-10-03'
+  raw_files:
+  - data/raw/pudl/core_eia861__yearly_service_territory.parquet
+  - data/raw/pudl/core_eia861__yearly_reliability.parquet
+  - data/raw/eia861/f8612024.zip
+  - data/raw/eia861/f8612020.zip
+eia923_cooling_water:
+  name: 'EIA-923 2025 final: Schedule 8D cooling water + Page 1 net generation'
+  url: https://www.eia.gov/electricity/data/eia923/xls/f923_2025.zip
+  landing_page: https://www.eia.gov/electricity/data/eia923/
+  vintage: 2025 final (released 2026-09-14); plant->subregion from eGRID2023 PLNT23
+  license: Public domain (US Government work)
+  notes: 'Per eGRID subregion: sum of 8D cooling water consumption (million gal -> L) / sum of net generation of
+    all plants (kWh), so wind/solar/hydro count as zero water. 1989 plants not in eGRID2023 mapped spatially with
+    EIA-860 coordinates; 34 plants (717,345 MWh) unmapped and dropped. 8D covers thermoelectric plants >= 100 MW
+    reporting cooling systems; smaller plants'' water is not counted (understates intensity slightly). Vintage mismatch:
+    2025 generation/water vs 2023 subregion assignment.'
+  download_date: '2026-10-03'
+  raw_files:
+  - data/raw/eia923/f923_2025.zip
+eia_gas_pipelines:
+  name: Natural Gas Interstate and Intrastate Pipelines (EIA; HIFLD Next mirror)
+  url: https://storage.googleapis.com/hifld-next-portolan-published/hifld/natural-gas-interstate-and-intrastate-pipelines/natural-gas-interstate-and-intrastate-pipelines/v1.0.0/geoparquet/natural-gas-interstate-and-intrastate-pipelines.parquet
+  landing_page: https://hifld.publicenvirodata.org (dataset hifld/natural-gas-interstate-and-intrastate-pipelines)
+  vintage: 'v1.0.0; source issued/modified {''issued'': ''2024-06-25'', ''modified'': ''2025-04-08'', ''provenance'':
+    {''issued'': ''inventory'', ''modified'': ''inventory''}}'
+  license: Public domain (US Government work, EIA)
+  notes: Interstate + intrastate lines (gathering lines excluded). Length clipped to counties in EPSG:5070.
+  download_date: '2026-10-03'
+  raw_files:
+  - data/raw/hifld/natural-gas-interstate-and-intrastate-pipelines.parquet
+epa_acres_brownfields:
+  name: EPA ACRES Brownfields Project Locations (FRS geospatial KMZ)
+  url: https://ordsext.epa.gov/FLA/www3/acres_frs.kmz
+  landing_page: https://www.epa.gov/frs/geospatial-data-download-service ; https://www.epa.gov/cleanups/cleanups-my-community
+  vintage: KML produced by EPA on SEP-04-2026
+  license: Public domain (US Government work)
+  notes: 41692 placemarks parsed; 41692 unique FRS registry IDs with non-zero coordinates. Locations are FRS best-available
+    coordinates (many address-matched). lnd_dist_brownfield_or_retired_km = nearest of brownfields and EIA-860M
+    retired plants >= 100 MW.
+  download_date: '2026-10-03'
+  raw_files:
+  - data/raw/epa_brownfields/acres_frs.kmz
+epa_cwns:
+  name: EPA Clean Watersheds Needs Survey 2022 - nationwide CSV dataset
+  url: https://sdwis.epa.gov/ords/sfdw_pub/r/sfdw/cwns_pub/data-download (national 'Download CSVs'; served via APEX
+    page f?p=148:2)
+  landing_page: https://www.epa.gov/cwns
+  vintage: 2022 CWNS (snapshot as of 2022-01-01); file 2022CWNS_NATIONAL_Sept2026.zip
+  license: Public domain (US Government work)
+  notes: Facilities with FACILITY_TYPE 'Treatment Plant'; CURRENT_DESIGN_FLOW of FLOW_TYPE 'Total Flow' (MGD), >
+    0. 16111 plants, 51,072 MGD total. County = AREAS_COUNTY primary county (8162 plants), else facility coordinates
+    point-in-polygon; 132 unlocated. Counties with no plant = 0. Old CT counties converted to planning regions by
+    area weight.
+  download_date: '2026-10-04'
+  raw_files:
+  - data/raw/epa_cwns/2022CWNS_NATIONAL_Sept2026.zip
+epa_egrid2023:
+  name: EPA eGRID2023 rev2 data + eGRID2023 subregion shapefile
+  url: https://www.epa.gov/system/files/documents/2025-06/egrid2023_data_rev2.xlsx
+  shapefile_url: https://www.epa.gov/system/files/other-files/2025-01/egrid2023_subregions.zip
+  landing_page: https://www.epa.gov/egrid/detailed-data
+  vintage: eGRID2023 (data year 2023), revision 2 released June 2025
+  license: Public domain (US EPA)
+  notes: 'SRCO2RTA (subregion annual CO2 total output emission rate, lb/MWh) x 0.4536 -> kg/MWh. Area-weighted overlay
+    of subregion polygons onto counties in EPSG:5070. Subregions are large, so many counties share a value. Polygons
+    without a rate: []'
+  download_date: '2026-10-03'
+  raw_files:
+  - data/raw/egrid/egrid2023_data_rev2.xlsx
+  - data/raw/egrid/egrid2023_subregions.zip
+epa_ghgrp:
+  name: EPA Greenhouse Gas Reporting Program - data summary spreadsheets
+  url: https://www.epa.gov/system/files/other-files/2024-10/2023_data_summary_spreadsheets.zip
+  landing_page: https://www.epa.gov/ghgreporting/data-sets
+  vintage: Reporting year 2023 (data as of 2024-08-16)
+  license: Public domain (US Government work)
+  notes: 'Direct Point Emitters sheet, facilities whose subparts include C and whose primary NAICS starts with (''311'',
+    ''312'', ''322'', ''325'', ''1114'') (1186 facilities; by 3-digit NAICS {''325'': 605, ''311'': 340, ''322'':
+    207, ''312'': 30, ''111'': 4}; 0 without coordinates). tCO2 = the ''Stationary Combustion'' column (metric tons
+    CO2e, AR4 GWPs; dominated by CO2). RY2023 is the latest EPA release: RY2024 data was not published by EPA (an
+    FOIA copy exists from Environmental Integrity Project but is not an official release).'
+  download_date: '2026-10-03'
+  raw_files:
+  - data/raw/epa_ghgrp/2023_data_summary_spreadsheets.zip
+epa_greenbook:
+  name: EPA Green Book - nonattainment/maintenance history by county (phistory)
+  url: https://www3.epa.gov/airquality/greenbook/downld/phistory.xls
+  landing_page: https://www.epa.gov/green-book/green-book-data-download
+  vintage: export 2026-09-30, status year 2026
+  license: Public domain (US Government work)
+  notes: 1 if the county is wholly (W) or partly (P) in a nonattainment area in the latest year for any NAAQS that
+    is not revoked; else 0.
+  download_date: '2026-10-03'
+  raw_files:
+  - data/raw/epa_greenbook/phistory.xls
+epoch_ai_frontier_dc:
+  name: Epoch AI - Frontier Data Centers dataset
+  url: https://epoch.ai/data/data_centers/data_centers.csv
+  landing_page: https://epoch.ai/data/ai-data-centers
+  vintage: download 2026-10-03 (cached)
+  license: CC BY 4.0 (Epoch AI)
+  notes: '77 US sites; addresses geocoded with the US Census Geocoder, OSM Nominatim fallback (per-site results:
+    data/interim/_epoch_geocoded.csv). 67 located; not located: [{''name'': ''Google Mesa'', ''address'': nan, ''method'':
+    ''no_address''}, {''name'': ''Amazon Madison Mega Site'', ''address'': ''Amazon Data Services Inc, Madison Mega
+    Site Nissan Parkway and Highway 22 Canton, Mississippi Madison County'', ''method'': ''unmatched''}, {''name'':
+    ''Google Kansas City East'', ''address'': nan, ''method'': ''no_address''}, {''name'': ''Google Storey County'',
+    ''address'': nan, ''method'': ''no_address''}, {''name'': ''Google Papillion'', ''address'': ''14651-15249 Gold
+    Coast Rd 68138 Papillion Nebraska, USA'', ''method'': ''unmatched''}, {''name'': ''Anthropic Barber Lake'',
+    ''address'': nan, ''method'': ''no_address''}, {''name'': ''OpenAI Stargate Michigan'', ''address'': nan, ''method'':
+    ''no_address''}, {''name'': ''OpenAI Stargate Milam'', ''address'': nan, ''method'': ''no_address''}, {''name'':
+    ''OpenAI Stargate New Mexico'', ''address'': nan, ''method'': ''no_address''}, {''name'': ''OpenAI Stargate
+    Wisconsin'', ''address'': nan, ''method'': ''no_address''}]. LABEL ONLY - never a model input.'
+  download_date: '2026-10-03'
+  raw_files:
+  - data/raw/epoch_ai/data_centers.csv
+ers_typology:
+  name: USDA ERS County Typology Codes, 2025 edition
+  url: https://www.ers.usda.gov/media/6174/ers-county-typology-codes-2025-edition.csv
+  landing_page: https://www.ers.usda.gov/data-products/county-typology-codes
+  vintage: 2025 edition (data as of April 2025)
+  license: Public domain (US Government work)
+  notes: 'cob_persistent_poverty = attribute Persistent_Poverty_1721 (poverty rate >= 20% in the 1990 and 2000 Censuses
+    and the 2007-11 and 2017-21 ACS). Non-0/1 codes -> NaN: -1 (undocumented; new or tiny counties such as Broomfield
+    CO, Loving TX, Miami-Dade FL) and 99 (CT planning regions, not available). For CT the file also has the 8 old
+    counties (all 0); those go through the old-county -> planning-region crosswalk (each region takes the value
+    of the old county covering most of it). Code counts: {-1: 24, 99: 9}.'
+  download_date: '2026-10-03'
+  raw_files:
+  - data/raw/ers_typology/ers-county-typology-codes-2025-edition.csv
+fema_nri:
+  name: FEMA National Risk Index, county table
+  url: https://dataverse.harvard.edu/api/access/datafile/10775771?format=original
+  landing_page: https://hazards.fema.gov/nri/data-resources
+  mirror: Harvard Dataverse doi:10.7910/DVN/JSQ8KZ (dataset version 2, released 2024-12-13)
+  vintage: NRI_VER = March 2023 (NRI v1.19.0)
+  license: Public domain (US Government work)
+  notes: 'hazards.fema.gov now redirects to the FEMA RAPT page; used the Dataverse mirror. Scores (0-100 percentile-type),
+    not dollar values. Where the EAL rating is ''Not Applicable'' (NRI: county not susceptible to the hazard) the
+    blank score is set to 0, the same score NRI gives ''No Expected Annual Losses''; counts set: {''haz_eal_riverine_flood'':
+    0, ''haz_eal_coastal_flood'': 2646, ''haz_eal_hurricane'': 914, ''haz_eal_wildfire'': 0, ''haz_eal_tornado'':
+    0, ''haz_eal_earthquake'': 0, ''haz_eal_heatwave'': 0, ''haz_eal_drought'': 0}. ''Insufficient Data'' stays
+    NaN. CT is on old counties in this release and was area-weighted to planning regions.'
+  download_date: '2026-10-03'
+  raw_files:
+  - data/raw/fema_nri/NRI_Table_Counties.csv
+fema_nri_future_risk:
+  name: FEMA National Risk Index - Future Risk (Climate Informed Risk Index) master datasheet
+  url: https://raw.githubusercontent.com/fulton-ring/nri-future-risk/main/public/NRI_Future_Risk_Master_Datasheet_12052024.xlsx
+  landing_page: https://github.com/fulton-ring/nri-future-risk
+  mirror: fulton-ring/nri-future-risk (copy made before FEMA removed the tool)
+  vintage: Master Datasheet 2024-12-05, data dictionary version 1.0.0 (2024-12-02)
+  license: Public domain (US Government work); mirror repo MIT
+  notes: 'MID_LOWER_PRISKS = Projected Risk Index Score, mid-century, lower mean global temperature scenario (chosen
+    to match the SSP2-4.5 CMRA choice). Only 5 hazards have projections: coastal flood, drought, extreme heat (LOCA
+    95th-percentile variant used; NEX/99th also published), hurricane, wildfire. Columns keep the spec''s haz_eal_*_future
+    names but hold projected RISK scores (0-100), not EAL scores: the Future Risk release has no projected EAL score.
+    Where the current hazard risk rating is ''Not Applicable'' the score is set to 0 (counts {''haz_eal_coastal_flood_future'':
+    2646, ''haz_eal_drought_future'': 0, ''haz_eal_heatwave_future'': 0, ''haz_eal_hurricane_future'': 914, ''haz_eal_wildfire_future'':
+    0}); ''Insufficient Data'' stays NaN. CT on old counties, area-weighted to planning regions.'
+  download_date: '2026-10-04'
+  raw_files:
+  - data/raw/nri_future/NRI_Future_Risk_Master_Datasheet_12052024.xlsx
+  - data/raw/nri_future/NRI_Data_Dictionary.xlsx
+gem_heavy_industry:
+  name: Global Energy Monitor - Global Iron and Steel Tracker + Global Cement and Concrete Tracker (via GEM API)
+  url: https://api.globalenergymonitor.org/assets?asset_type={iron-steel-plant|cement-plant}&country=United States&include_type_fields=true
+  landing_page: https://globalenergymonitor.org/projects/global-iron-steel-tracker ; https://globalenergymonitor.org/projects/global-cement-concrete-tracker
+  vintage: Iron-Steel-March-2026.xlsx (Global Iron and Steel Tracker, March 2026 + quarterly updates); Global Cement
+    and Concrete Tracker, July 2026
+  license: CC BY 4.0 (Global Energy Monitor)
+  notes: 'Pulled from GEM''s public asset API instead of the form-gated xlsx (same tracker sources, ids 10/11).
+    Steel: unit-level, operating_status == operating and furnace category / unit name contains EAF -> 82 units at
+    61 plants. Cement: operating plants (96). Distance from the population-weighted centroid to the nearest plant.'
+  download_date: '2026-10-04'
+  raw_files:
+  - data/raw/gem/iron-steel-plant_US.json
+  - data/raw/gem/cement-plant_US.json
+hifld_transmission_lines:
+  name: HIFLD Electric Power Transmission Lines (HIFLD Next mirror)
+  url: https://storage.googleapis.com/hifld-next-portolan-published/hifld/transmission-lines-1/transmission-lines-1/v1.0.0/geoparquet/transmission-lines-1.parquet
+  landing_page: https://hifld.publicenvirodata.org (dataset hifld/transmission-lines-1)
+  vintage: 'v1.0.0; source issued/modified {''issued'': ''2025-02-19'', ''modified'': ''2025-02-19'', ''provenance'':
+    {''issued'': ''inventory'', ''modified'': ''inventory''}}'
+  license: Public domain (US Government work, ORNL/DOE via HIFLD Open; retired 2025)
+  notes: HIFLD Open retired in 2025; using the HIFLD Next GeoParquet copy. 14248 lines with VOLTAGE <= 0 or missing
+    (-999999 = unknown) excluded; INACTIVE and UNDER CONSTRUCTION excluded. Lengths are clipped to counties in EPSG:5070.
+    Distances from the 2020 population centroid.
+  download_date: '2026-10-03'
+  raw_files:
+  - data/raw/hifld/transmission-lines-1.parquet
+lbnl_queue:
+  name: 'LBNL Queued Up: U.S. Interconnection Queue Data Through 2025 (Complete Interconnection Request Dataset)'
+  url: https://eta-publications.lbl.gov/sites/default/files/2026-05/lbnl_ix_queue_data_file_thru2025.xlsx
+  landing_page: https://eta-publications.lbl.gov/publications/us-interconnection-queue-data-0
+  vintage: Queued Up 2026 edition, data through end of 2025 (file dated 2026-05)
+  license: CC BY 4.0 (Lawrence Berkeley National Laboratory)
+  notes: 'emp.lbl.gov is behind a Cloudflare challenge; the same file is served from eta-publications.lbl.gov (needs
+    a browser User-Agent + Referer). crb_queue_clean_mw: q_status == active, sum of mw_1..3 whose type_1..3 is Solar/Wind/Offshore
+    Wind/Battery/Other Storage/Nuclear/Geothermal (hydro excluded). County = LBNL fips_code when its state prefix
+    matches ''state''; otherwise first listed county name matched to the base layer by state + normalized name.
+    Active clean rows by method: {''lbnl_fips'': 7488, ''unmatched'': 74}; unmatched rows logged in unmatched_active_clean.csv
+    (74 rows, 18,349 MW). Counties with no active clean requests = 0. Multi-county projects are credited to the
+    first county only. pwr_gen_queue_median_yrs: median (on_date - q_date) in years over all operational requests
+    with both dates, by LBNL region (n per region: {"CAISO": 225, "ERCOT": 470, "MISO": 476, "NYISO": 83, "PJM":
+    1181, "SPP": 272, "Southeast": 215, "West": 176}). Joined via pwr_iso; counties with pwr_iso NONE get LBNL''s
+    non-ISO region (West or Southeast) that holds most of their state''s non-ISO requests. Regions with no operational
+    requests carrying both dates (here: [''ISO-NE'']) and counties with no pwr_iso stay NaN. This is a generator-interconnection
+    congestion proxy, NOT a load interconnection wait time.'
+  download_date: '2026-10-04'
+  raw_files:
+  - data/raw/lbnl_queue/lbnl_ix_queue_data_file_thru2025.xlsx
+  - data/raw/lbnl_queue/unmatched_active_clean.csv
+loca2_temperature:
+  name: NOAA/CMRA LOCA2-Ensemble SSP2-4.5 Temperature Variables 1950-2100, County layer
+  url: https://services3.arcgis.com/0Fs3HcaFfvzXvm7w/arcgis/rest/services/LOCA2_Ensemble_SSP245_Temperature_Variables_1950_2100/FeatureServer/0
+  landing_page: https://resilience.climate.gov/ ; https://www.arcgis.com/sharing/rest/search?q=LOCA2-Ensemble%20SSP2-4.5%20Temperature%20Variables
+  vintage: LOCA2 (CMIP6) ensemble, SSP2-4.5, decadal means
+  license: Public (NOAA / US federal; CMRA)
+  notes: 'haz_tavg_delta_2050_c = mean annual-average daily temperature (TAVG) of decades [2040, 2050] minus decades
+    [2000, 2010], converted F -> C. haz_free_cooling_pct_hours_2050 (delta method): every TMY hour''s dry-bulb AND
+    dew point are raised by the delta (constant-relative-humidity approximation, as in standard weather-file morphing),
+    then the Phase A free-cooling rule (dry-bulb <= 18.0 C and dew point <= 15.0 C) is re-applied. A uniform annual
+    shift ignores seasonal/diurnal differences in warming.'
+  download_date: '2026-10-04'
+  raw_files:
+  - data/raw/loca2_temperature/loca2_ssp245_county_decadal_tavg.json
+manual_csvs:
+  name: Hand-maintained CSVs (data/manual/)
+  url: data/manual/
+  vintage: as edited
+  license: Project-internal; each row must carry its own source_url
+  notes: 'local_moratoria -> prm_moratorium_active (status=active rows only: 1 if a county-level row, 0.5 if only
+    city/town/township/tribal rows, else 0) and prm_moratorium_proposed (1 if any status=proposed row, any jurisdiction
+    type); expired rows are ignored. state_policy -> prm_state_moratorium, prm_tax_exemption_status (''unknown''
+    kept as a category), prm_large_load_tariff, prm_county_can_zone, meta_state_policy_verified (the CSV''s verified
+    column; unverified rows hold template defaults) (states absent from the CSV stay NaN); contested_projects ->
+    prm_contested_n, prm_contested_neighbors_n (sum over Census-adjacent counties, self excluded), lbl_contested_n
+    (same count, label use only). A CSV with only example rows gives NaN, not 0.'
+  download_date: '2026-10-04'
+  raw_files:
+  - data/manual/contested_projects.csv
+  - data/manual/local_moratoria.csv
+  - data/manual/state_policy.csv
+  - data/manual/utility_time_to_power.csv
+manual_time_to_power:
+  name: Hand-maintained utility time-to-power CSV (data/manual/utility_time_to_power.csv)
+  url: data/manual/utility_time_to_power.csv
+  vintage: as edited
+  license: Project-internal; each row carries its own source_url
+  notes: Mapped to counties with the EIA-861 service-territory map. A county served by ANY utility with basis=not_accepting
+    gets max(years_to_power_est) + 2 and source not_accepting (overrides other utilities). Otherwise the sales-weighted
+    mean of serving utilities with a value (source utility). Rows with empty years_to_power_est are ignored. Every
+    other county gets the NATIONAL AVERAGE row (source national). No ISO-level fallback.
+  download_date: '2026-10-04'
+  raw_files:
+  - data/manual/utility_time_to_power.csv
+netl_energy_community:
+  name: DOE/NETL IRA Energy Community Data Layers (v2024.1)
+  url: https://edx.netl.doe.gov/storage/f/edx/2024/06/2024-06-07T01:36:36.743668/13454403-ef6b-479b-b720-d5e3eaefbb91/MSA_NMSA_EC_FFE_v2024_1.zip
+    ; https://edx.netl.doe.gov/storage/f/edx/2024/06/2024-06-07T01:34:50.394202/4006c9da-f99c-4731-97b2-633cc1578994/Coal_Closures_EnergyComm_v2024_1.zip
+  landing_page: https://edx.netl.doe.gov/dataset/ira-energy-community-data-layers
+  vintage: 2024.1 (published 2024-06-07)
+  license: CC BY (EDX resource license); DOI 10.18141/1967447
+  notes: Union of MSA/non-MSA counties that are energy communities (901 county pieces) and coal-closure census tracts
+    plus adjoining tracts (4325). cob_energy_community = 1 if the union covers > 50% of the county area (cob_energy_community_pct
+    kept for transparency). Not yet reflecting IRS Notice 2025-31 (2025 lists, published only as tables) - latest
+    NETL spatial release is 2024. The brownfield category is not mapped by NETL and is excluded.
+  download_date: '2026-10-04'
+  raw_files:
+  - data/raw/netl_energy_comm/MSA_NMSA_EC_FFE_v2024_1.zip
+  - data/raw/netl_energy_comm/Coal_Closures_EnergyComm_v2024_1.zip
+noaa_nclimgrid_daily:
+  name: NOAA nClimGrid-Daily county-averaged daily temperature (scaled CSVs)
+  url: https://www.ncei.noaa.gov/data/nclimgrid-daily/access/averages/{year}/{tavg|tmax}-{year}{MM}-cty-scaled.csv
+  landing_page: https://www.ncei.noaa.gov/products/land-based-station/nclimgrid-daily
+  vintage: 1991-2020 daily (nClimGrid-Daily v1, scaled county averages)
+  license: Public domain (NOAA)
+  notes: 'CDD/HDD from daily TAVG converted to F, base 65F, summed per year then averaged over 1991-2020. Hot days:
+    daily TMAX > 35C. County ID in files = NCEI state code + FIPS county, remapped to FIPS via the state abbreviation.
+    CT uses old counties -> area-weighted to planning regions. 720 monthly files cached under data/raw/nclimgrid/.'
+  download_date: '2026-10-03'
+  raw_files:
+  - data/raw/nclimgrid/1991/tavg-199101-cty-scaled.csv
+  - data/raw/nclimgrid/2020/tmax-202012-cty-scaled.csv
+nps_nrhp:
+  name: National Register of Historic Places - NRIS_CR_Standards_Public geodatabase
+  url: https://irma.nps.gov/DataStore/DownloadFile/762962?Reference=2319397
+  landing_page: https://irma.nps.gov/DataStore/Reference/Profile/2319397
+  vintage: August 2026 release (NRIS extract March 2026)
+  license: Public domain (US Government work)
+  notes: 95020 unique properties with geometry across building/site/district/object/structure layers; 94337 with
+    NR_Main Status = Listed (removed properties excluded). Point preferred, else polygon representative point. Restricted/sensitive
+    sites are excluded by NPS, so counts are a lower bound.
+  download_date: '2026-10-03'
+  raw_files:
+  - data/raw/nps_nrhp/NRIS_CR_Standards_Public.gdb.zip
+nrel_cambium_2024:
+  name: NREL Cambium 2024 Workbook (LRMER and GEA county mapping)
+  url: https://data.nlr.gov/system/files/289/1744314776-Cambium24_Workbook.xlsx
+  landing_page: https://data.nlr.gov/submissions/289 ; https://data.openei.org/submissions/8395
+  vintage: Cambium 2024 (released March 2025; workbook 2025-04-10)
+  license: CC BY 4.0 (OEDI/NLR data catalog)
+  notes: 'lrmer_co2e for Mid-case 2035 rebuilt from the ''Data - Annual'' tab as combustion + precombustion CO2
+    + 29.8*CH4 + 273*N2O (g->kg), AR6 100-yr GWPs as in Cambium docs. Units kg CO2e per MWh of end-use demand. Regional
+    (18 GEAs), table-joined via the workbook ''County Mapping'' tab (ReEDS BAs respect county lines). GEA values:
+    {''CAISO'': 66.6, ''ERCOT'': 69.9, ''FRCC'': 233.1, ''ISONE'': 116.8, ''MISO_Central'': 129.2, ''MISO_North'':
+    141.8, ''MISO_South'': 162.7, ''NorthernGrid_East'': 75.4, ''NorthernGrid_South'': 142.9, ''NorthernGrid_West'':
+    24.9, ''NYISO'': 184.1, ''PJM_East'': 262.1, ''PJM_West'': 203.4, ''SERTP'': 143.3, ''SPP_North'': 135.6, ''SPP_South'':
+    104.6, ''WestConnect_North'': 84.8, ''WestConnect_South'': 125.0}. Unmapped GEAs: none.'
+  download_date: '2026-10-04'
+  raw_files:
+  - data/raw/nrel_cambium/Cambium24_Workbook.xlsx
+nrel_county_industrial_energy:
+  name: NREL United States County-Level Industrial Energy Use
+  url: https://data.nlr.gov/system/files/97/manufacturing_EndUse.gz
+  landing_page: https://data.nlr.gov/submissions/97 ; https://doi.org/10.7799/1481899
+  vintage: Energy-use year 2014 (published 2018-09-27)
+  license: CC BY 4.0 (NREL Data Catalog)
+  notes: 'FALLBACK per spec: the county file has no temperature field (temperatures exist only by SIC in Process_temperatures.csv),
+    so cob_lowtemp_ind_heat_tbtu = sum of Enduse ''Process Heating'' (all fuels, TBtu) for NAICS (''311'', ''312'',
+    ''322'') (food, beverage, paper) - a proxy, not a measured <100C total. Boiler and CHP steam for these sectors
+    (also largely low-temperature) are NOT included. Counties absent from the file = 0. Total = sum of fuel columns
+    with negative Net_electricity (on-site generation exported, e.g. paper mills) floored at 0, since exports are
+    not negative heat demand (6 rows affected). 2014 county codes fixed (46113, 51515) and old CT counties converted
+    by area weight.'
+  download_date: '2026-10-04'
+  raw_files:
+  - data/raw/nrel_industrial/manufacturing_EndUse.gz
+nrel_reeds_county_cf:
+  name: 2024 County-Level Hourly Renewable Capacity Factor Dataset for the ReEDS Model
+  url: https://data.openei.org/files/8379/upv_county_20250325.zip ; https://data.openei.org/files/8379/wind-ons_county_20250325.zip
+  landing_page: https://data.openei.org/submissions/8379
+  vintage: 2024 dataset (files dated 2025-03-25; UPV supply curve 2024_07_09, wind 2025_03_21); weather years 2007-2013
+    + 2016-2023
+  license: CC BY 4.0 (OEDI)
+  notes: 'Reference land-use scenario only (open/limited not used), extracted from the zip with HTTP range reads.
+    Per column (resource class x county) mean over all hours, then UNWEIGHTED mean across the resource classes present
+    in the county (no capacity weights in the file; ambiguous - capacity-weighted or best-class would differ). {''crb_solar_cf'':
+    {''classes_per_county_max'': 3, ''hours'': (''2007-01-01'', ''2023-12-31'', 131400)}, ''crb_wind_cf'': {''classes_per_county_max'':
+    10, ''hours'': (''2007-01-01'', ''2023-12-31'', 131400)}}. Counties with no developable class in the reference
+    scenario are NaN. Most missing rows are Virginia independent cities, which ReEDS folds into surrounding counties;
+    they are left NaN rather than borrowing the parent county''s value.'
+  download_date: '2026-10-04'
+  raw_files:
+  - data/raw/nrel_reeds_cf/upv/upv-reference_county.h5
+  - data/raw/nrel_reeds_cf/wind-ons/wind-ons-reference_county.h5
+osm_substations:
+  name: OpenStreetMap power=substation (Overpass API, per state)
+  url: https://overpass-api.de/api/interpreter
+  landing_page: https://wiki.openstreetmap.org/wiki/Tag:power%3Dsubstation
+  vintage: Overpass snapshot 2026-10-04 (cached per state)
+  license: ODbL 1.0 (OpenStreetMap contributors)
+  notes: 'Substations with a voltage tag; max of multi-voltage strings; values < 1000 treated as kV. 56456 tagged
+    substations, 6857 with max voltage >= 230 kV. Ways/relations use Overpass center. Substations crossing state
+    lines are deduplicated by OSM id. Untagged-voltage substations are excluded. Failed states (NaN): none.'
+  download_date: '2026-10-04'
+  raw_files:
+  - data/raw/osm_substations/AL.json
+  - data/raw/osm_substations/AR.json
+  - data/raw/osm_substations/AZ.json
+  - data/raw/osm_substations/CA.json
+  - data/raw/osm_substations/CO.json
+  - data/raw/osm_substations/CT.json
+  - data/raw/osm_substations/DC.json
+  - data/raw/osm_substations/DE.json
+  - data/raw/osm_substations/FL.json
+  - data/raw/osm_substations/GA.json
+  - data/raw/osm_substations/IA.json
+  - data/raw/osm_substations/ID.json
+  - data/raw/osm_substations/IL.json
+  - data/raw/osm_substations/IN.json
+  - data/raw/osm_substations/KS.json
+  - data/raw/osm_substations/KY.json
+  - data/raw/osm_substations/LA.json
+  - data/raw/osm_substations/MA.json
+  - data/raw/osm_substations/MD.json
+  - data/raw/osm_substations/ME.json
+peeringdb:
+  name: 'PeeringDB public API: fac, ixfac, ix'
+  url: https://www.peeringdb.com/api/{fac|ixfac|ix}
+  landing_page: https://www.peeringdb.com/apidocs/
+  vintage: API snapshot 2026-10-03 (cached)
+  license: PeeringDB AUP; public data, attribution
+  notes: US facilities with status ok and coordinates (1354; 23 without coordinates dropped). lnd_ixp_n = facilities
+    linked to at least one exchange via ixfac (478 US facilities); lnd_colo_fac_n = all PeeringDB facilities. Distance
+    from the population centroid to the nearest IX-hosting facility.
+  download_date: '2026-10-03'
+  raw_files:
+  - data/raw/peeringdb/fac_US.json
+  - data/raw/peeringdb/ixfac_all.json
+  - data/raw/peeringdb/ix_US.json
+pnnl_im3_datacenter_atlas:
+  name: IM3 Open Source Data Center Atlas (PNNL) - existing data centers
+  url: https://raw.githubusercontent.com/IMMM-SFA/datacenter-atlas/main/data_center_database/im3_us_data_center_locations.gpkg
+  landing_page: https://github.com/IMMM-SFA/datacenter-atlas ; https://data.msdlive.org/records/65g71-a4731
+  vintage: Atlas v1 (2025-06-06); GeoPackage from main branch
+  license: BSD-2-Clause (repo); data derived from OpenStreetMap (ODbL)
+  notes: 'Layers {''point'': 105, ''building'': 983, ''campus'': 135} after dropping 256 buildings that lie inside
+    a campus polygon. Each feature''s representative point is counted in its county. LABEL ONLY - never a model
+    input.'
+  download_date: '2026-10-03'
+  raw_files:
+  - data/raw/pnnl_im3/im3_us_data_center_locations.gpkg
+usdm_drought:
+  name: US Drought Monitor county statistics (percent area, cumulative)
+  url: https://usdmdataservices.unl.edu/api/CountyStatistics/GetDroughtSeverityStatisticsByAreaPercent
+  landing_page: https://droughtmonitor.unl.edu/DmData/DataDownload/ComprehensiveStatistics.aspx
+  vintage: weekly maps 1/1/2000 to 12/31/2025 (1357 weeks)
+  license: 'Public domain; credit: National Drought Mitigation Center, USDA, NOAA'
+  notes: One REST call per state for the full period. A week counts if the D2-D4 area > 0%.
+  download_date: '2026-10-03'
+  raw_files:
+  - data/raw/usdm/county_AL_2000_2025.csv
+  - data/raw/usdm/county_AZ_2000_2025.csv
+  - data/raw/usdm/county_AR_2000_2025.csv
+  - data/raw/usdm/county_CA_2000_2025.csv
+  - data/raw/usdm/county_CO_2000_2025.csv
+  - data/raw/usdm/county_CT_2000_2025.csv
+  - data/raw/usdm/county_DE_2000_2025.csv
+  - data/raw/usdm/county_DC_2000_2025.csv
+  - data/raw/usdm/county_FL_2000_2025.csv
+  - data/raw/usdm/county_GA_2000_2025.csv
+  - data/raw/usdm/county_ID_2000_2025.csv
+  - data/raw/usdm/county_IL_2000_2025.csv
+  - data/raw/usdm/county_IN_2000_2025.csv
+  - data/raw/usdm/county_IA_2000_2025.csv
+  - data/raw/usdm/county_KS_2000_2025.csv
+  - data/raw/usdm/county_KY_2000_2025.csv
+  - data/raw/usdm/county_LA_2000_2025.csv
+  - data/raw/usdm/county_ME_2000_2025.csv
+  - data/raw/usdm/county_MD_2000_2025.csv
+  - data/raw/usdm/county_MA_2000_2025.csv
+usgs_annual_nlcd:
+  name: USGS Annual NLCD CONUS Collection 1.1 Land Cover 2024 (30 m)
+  url: https://www.mrlc.gov/downloads/sciweb1/shared/mrlc/data-bundles/Annual_NLCD_LndCov_2024_CU_C1V1.zip
+  landing_page: https://www.mrlc.gov/data ; https://doi.org/10.5066/P94UXNTS
+  vintage: Land cover year 2024, Collection 1 Version 1 (C1.1)
+  license: Public domain (US Government work)
+  notes: 'Class groups {''lnd_pct_developed'': [21, 22, 23, 24], ''lnd_pct_buildable'': [31, 52, 71, 81], ''lnd_pct_wetland'':
+    [90, 95], ''lnd_pct_cropland'': [82], ''lnd_pct_forest'': [41, 42, 43]}. exactextract ''unique''+''frac'' on
+    county polygons reprojected to the raster CRS; denominator = all valid cells in the county including open water
+    (11), so groups are % of total county area. Collection 1.2 (adds 2025) now exists on mrlc.gov; 1.1/2024 used
+    as specified.'
+  download_date: '2026-10-04'
+  raw_files:
+  - data/raw/nlcd/Annual_NLCD_LndCov_2024_CU_C1V1.zip
+usgs_karst:
+  name: 'Karst in the United States: a digital map compilation and database (Weary & Doctor, USGS OFR 2014-1156)'
+  url: https://pubs.usgs.gov/of/2014/1156/downloads/USKarstMap.zip
+  landing_page: https://pubs.usgs.gov/of/2014/1156/
+  vintage: 2014 (v1.0)
+  license: Public domain (USGS)
+  notes: Layers ['Carbonates48', 'Evaporites48', 'SandstoneKarst48'] (carbonate, evaporite and quartz-sandstone
+    solution karst) unioned per county; volcanic and piping pseudokarst and the buried evaporite basins layer are
+    excluded. haz_karst_pct includes rock buried under insoluble cover (Exposure B1-B3); haz_karst_exposed_pct is
+    Exposure = E only (at or near the land surface). Percent of the county polygon area (EPSG:5070).
+  download_date: '2026-10-04'
+  raw_files:
+  - data/raw/usgs_karst/USKarstMap.zip
+usgs_padus:
+  name: USGS Protected Areas Database of the US (PAD-US) 4.1 - Combined layer
+  url: https://data.source.coop/cboettig/padus/padus-4-1/combined.parquet
+  landing_page: https://source.coop/cboettig/padus ; https://www.usgs.gov/programs/gap-analysis-project/science/pad-us-data-download
+  vintage: PAD-US 4.1
+  license: Public domain (USGS); source.coop mirror by C. Boettiger
+  notes: 'Combined layer (Fee, Easement, Designation, Proclamation) filtered to GAP_Sts in [''1'', ''2''] within
+    the CONUS bbox (121534 features), Marine category dropped (120670 kept). Overlaps dissolved per county before
+    measuring, so area is not double counted. Denominator = cb_2025 500k county area incl. inland water. CAVEAT:
+    some Designation polygons are proclamation boundaries rather than protected land, e.g. San Juan Islands National
+    Monument (GAP 2, 432,005 acres) covers all of San Juan County WA, which therefore shows 100%. Kept as published;
+    no ad hoc filter applied.'
+  download_date: '2026-10-04'
+  raw_files:
+  - data/raw/padus/padus-4-1_combined.parquet
+usgs_water_use:
+  name: USGS National Water Availability Assessment (NWAA) Data Companion - water-use models
+  url: https://api.water.usgs.gov/nwaa-data/data?model={wu-public-supply-wd,wu-irrigation-wd,wu-thermoelectric}&location=stateCd:XX&timeres=annualcy&startdate=2020
+  landing_page: https://water.usgs.gov/nwaa-data/
+  vintage: NWDC API v2.1.0, calendar year 2020
+  license: Public domain (USGS)
+  notes: 528 cached API pages in data/raw/usgs_nwaa.
+    The NWAA models are HUC12-only (no county table), so HUC12 annual mean withdrawals (Mgal/d) are split onto counties
+    by the share of each HUC12's area that falls in the county (EPSG:5070); assumes withdrawals are uniform within
+    a HUC12. HUC12 area outside CONUS counties (ocean, Canada, Mexico) is dropped. wtr_total_withdrawal_mgd = public
+    supply (pswdtot) + crop irrigation (irrwdtot) + thermoelectric fresh (tewdftot) + thermoelectric saline (tewdssw).
+    NWAA does not model industrial, mining, livestock, aquaculture or domestic self-supplied use, so this is NOT
+    the full USGS 'total withdrawals' of the legacy 5-year compilations. Component columns wtr_ps/irr/te_withdrawal_mgd
+    are kept. 0 HUC12s had values but no geometry and were dropped.
+  download_date: '2026-10-04'
+  raw_files:
+  - data/raw/usgs_nwaa/huc12_2020_withdrawals.csv
+wildfire_risk:
+  name: Wildfire Risk to Communities - county download
+  url: https://wildfirerisk.org/wp-content/uploads/2026/04/wrc_download_20260415.xlsx
+  landing_page: https://wildfirerisk.org/download/
+  vintage: 2026-04-15 release
+  license: Public domain (USDA Forest Service)
+  notes: '''Risk to homes'' = RISK_NATIONAL_RANK, the national percentile of the county''s mean Risk to Potential
+    Structures (RPS); stored as 0-100.'
+  download_date: '2026-10-03'
+  raw_files:
+  - data/raw/wildfire_risk/wrc_download_20260415.xlsx
+wri_aqueduct40:
+  name: WRI Aqueduct 4.0 water risk data (baseline annual + future annual)
+  url: https://files.wri.org/aqueduct/aqueduct-4-0-water-risk-data.zip
+  landing_page: https://www.wri.org/data/aqueduct-global-maps-40-data
+  vintage: Aqueduct 4.0, release Y2023M07D05 (baseline 1979-2019; future 2050)
+  license: CC BY 4.0 (World Resources Institute)
+  notes: wtr_bws_score = baseline annual bws_score (0-5) from the 'baseline_annual' layer (HydroBASINS level 6 x
+    GADM admin-1 units). wtr_bws_2050_score = bau50_ws_x_s from 'future_annual' (business-as-usual = SSP3-7.0, 2050).
+    Negative sentinel scores -> NaN. Area-weighted overlay onto counties in EPSG:5070.
+  download_date: '2026-10-03'
+  raw_files:
+  - data/raw/wri_aqueduct/aqueduct-4-0-water-risk-data.zip

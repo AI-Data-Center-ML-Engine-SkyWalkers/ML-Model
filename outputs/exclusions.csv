@@ -1,0 +1,629 @@
+fips,county,state,protected_land,active_county_moratorium,statewide_moratorium,too_little_candidate_land,far_from_grid,extreme_hurricane,extreme_coastal_flood,extreme_water_stress,failed_rules,n_failed
+01003,Baldwin County,AL,0,0,0,0,0,1,0,0,Extreme hurricane,1
+01097,Mobile County,AL,0,0,0,0,0,1,0,0,Extreme hurricane,1
+05005,Baxter County,AR,0,0,0,0,1,0,0,0,Far from the grid,1
+05009,Boone County,AR,0,0,0,0,1,0,0,0,Far from the grid,1
+05015,Carroll County,AR,0,0,0,0,1,0,0,0,Far from the grid,1
+05021,Clay County,AR,0,0,0,0,0,0,0,1,Extreme water stress,1
+05031,Craighead County,AR,0,0,0,0,0,0,0,1,Extreme water stress,1
+05037,Cross County,AR,0,0,0,0,0,0,0,1,Extreme water stress,1
+05043,Drew County,AR,0,0,0,0,1,0,0,0,Far from the grid,1
+05049,Fulton County,AR,0,0,0,0,1,0,0,0,Far from the grid,1
+05055,Greene County,AR,0,0,0,0,0,0,0,1,Extreme water stress,1
+05063,Independence County,AR,0,1,0,0,0,0,0,0,Active county moratorium,1
+05065,Izard County,AR,0,0,0,0,1,0,0,0,Far from the grid,1
+05089,Marion County,AR,0,0,0,0,1,0,0,0,Far from the grid,1
+05097,Montgomery County,AR,0,0,0,0,1,0,0,0,Far from the grid,1
+05101,Newton County,AR,0,0,0,0,1,0,0,0,Far from the grid,1
+05109,Pike County,AR,0,0,0,0,1,0,0,0,Far from the grid,1
+05111,Poinsett County,AR,0,0,0,0,0,0,0,1,Extreme water stress,1
+05113,Polk County,AR,0,0,0,0,1,0,0,0,Far from the grid,1
+05121,Randolph County,AR,0,0,0,0,1,0,0,0,Far from the grid,1
+05129,Searcy County,AR,0,0,0,0,1,0,0,0,Far from the grid,1
+05135,Sharp County,AR,0,0,0,0,1,0,0,0,Far from the grid,1
+05137,Stone County,AR,0,0,0,0,1,0,0,0,Far from the grid,1
+04003,Cochise County,AZ,0,0,0,0,0,0,0,1,Extreme water stress,1
+04009,Graham County,AZ,0,0,0,0,0,0,0,1,Extreme water stress,1
+04019,Pima County,AZ,0,0,0,0,0,0,0,1,Extreme water stress,1
+04021,Pinal County,AZ,0,0,0,0,0,0,0,1,Extreme water stress,1
+04023,Santa Cruz County,AZ,0,0,0,0,1,0,0,1,Far from the grid; Extreme water stress,2
+06015,Del Norte County,CA,0,0,0,0,1,0,0,0,Far from the grid,1
+06023,Humboldt County,CA,0,0,0,0,1,0,0,0,Far from the grid,1
+06027,Inyo County,CA,1,0,0,0,0,0,0,0,Protected land,1
+06029,Kern County,CA,0,0,0,0,0,0,0,1,Extreme water stress,1
+06031,Kings County,CA,0,0,0,0,0,0,0,1,Extreme water stress,1
+06037,Los Angeles County,CA,0,0,0,0,0,0,0,1,Extreme water stress,1
+06045,Mendocino County,CA,0,0,0,0,1,0,0,0,Far from the grid,1
+06047,Merced County,CA,0,0,0,0,0,0,0,1,Extreme water stress,1
+06049,Modoc County,CA,0,0,0,0,0,0,0,1,Extreme water stress,1
+06059,Orange County,CA,0,0,0,0,0,0,0,1,Extreme water stress,1
+06065,Riverside County,CA,0,0,0,0,0,0,0,1,Extreme water stress,1
+06071,San Bernardino County,CA,0,0,0,0,0,0,0,1,Extreme water stress,1
+06073,San Diego County,CA,0,0,0,0,0,0,0,1,Extreme water stress,1
+06075,San Francisco County,CA,0,0,0,1,0,0,0,0,Too little candidate land,1
+06083,Santa Barbara County,CA,0,0,0,0,0,0,0,1,Extreme water stress,1
+06107,Tulare County,CA,0,0,0,0,0,0,0,1,Extreme water stress,1
+06111,Ventura County,CA,0,0,0,0,0,0,0,1,Extreme water stress,1
+08001,Adams County,CO,0,0,0,0,0,0,0,1,Extreme water stress,1
+08005,Arapahoe County,CO,0,0,0,0,0,0,0,1,Extreme water stress,1
+08007,Archuleta County,CO,0,0,0,0,1,0,0,0,Far from the grid,1
+08009,Baca County,CO,0,0,0,0,0,0,0,1,Extreme water stress,1
+08013,Boulder County,CO,0,0,0,0,0,0,0,1,Extreme water stress,1
+08014,Broomfield County,CO,0,0,0,0,0,0,0,1,Extreme water stress,1
+08015,Chaffee County,CO,0,0,0,0,0,0,0,1,Extreme water stress,1
+08017,Cheyenne County,CO,0,0,0,0,1,0,0,1,Far from the grid; Extreme water stress,2
+08019,Clear Creek County,CO,0,0,0,0,0,0,0,1,Extreme water stress,1
+08021,Conejos County,CO,0,0,0,0,1,0,0,0,Far from the grid,1
+08023,Costilla County,CO,0,0,0,0,1,0,0,0,Far from the grid,1
+08025,Crowley County,CO,0,0,0,0,0,0,0,1,Extreme water stress,1
+08027,Custer County,CO,0,0,0,0,0,0,0,1,Extreme water stress,1
+08031,Denver County,CO,0,0,0,0,0,0,0,1,Extreme water stress,1
+08035,Douglas County,CO,0,0,0,0,0,0,0,1,Extreme water stress,1
+08041,El Paso County,CO,0,0,0,0,0,0,0,1,Extreme water stress,1
+08039,Elbert County,CO,0,0,0,0,0,0,0,1,Extreme water stress,1
+08043,Fremont County,CO,0,0,0,0,0,0,0,1,Extreme water stress,1
+08047,Gilpin County,CO,0,0,0,0,0,0,0,1,Extreme water stress,1
+08053,Hinsdale County,CO,1,0,0,0,0,0,0,0,Protected land,1
+08055,Huerfano County,CO,0,0,0,0,0,0,0,1,Extreme water stress,1
+08059,Jefferson County,CO,0,0,0,0,0,0,0,1,Extreme water stress,1
+08063,Kit Carson County,CO,0,0,0,0,0,0,0,1,Extreme water stress,1
+08065,Lake County,CO,0,0,0,0,0,0,0,1,Extreme water stress,1
+08069,Larimer County,CO,0,0,0,0,0,0,0,1,Extreme water stress,1
+08073,Lincoln County,CO,0,0,0,0,0,0,0,1,Extreme water stress,1
+08075,Logan County,CO,0,0,0,0,0,0,0,1,Extreme water stress,1
+08079,Mineral County,CO,0,0,0,0,1,0,0,0,Far from the grid,1
+08087,Morgan County,CO,0,0,0,0,0,0,0,1,Extreme water stress,1
+08093,Park County,CO,0,0,0,0,0,0,0,1,Extreme water stress,1
+08095,Phillips County,CO,0,0,0,0,0,0,0,1,Extreme water stress,1
+08099,Prowers County,CO,0,0,0,0,0,0,0,1,Extreme water stress,1
+08101,Pueblo County,CO,0,0,0,0,0,0,0,1,Extreme water stress,1
+08115,Sedgwick County,CO,0,0,0,0,0,0,0,1,Extreme water stress,1
+08119,Teller County,CO,0,0,0,0,0,0,0,1,Extreme water stress,1
+08121,Washington County,CO,0,0,0,0,0,0,0,1,Extreme water stress,1
+08123,Weld County,CO,0,0,0,0,0,0,0,1,Extreme water stress,1
+08125,Yuma County,CO,0,0,0,0,0,0,0,1,Extreme water stress,1
+09120,Greater Bridgeport Planning Region,CT,0,0,0,0,0,1,1,0,Extreme hurricane; Extreme coastal flood,2
+11001,District of Columbia,DC,0,0,0,1,0,0,0,0,Too little candidate land,1
+10005,Sussex County,DE,0,0,0,0,0,0,1,0,Extreme coastal flood,1
+12005,Bay County,FL,0,0,0,0,0,1,0,0,Extreme hurricane,1
+12009,Brevard County,FL,0,0,0,0,0,1,0,0,Extreme hurricane,1
+12011,Broward County,FL,0,0,0,0,0,1,0,0,Extreme hurricane,1
+12015,Charlotte County,FL,0,0,0,0,0,1,0,0,Extreme hurricane,1
+12017,Citrus County,FL,0,0,0,0,0,1,0,0,Extreme hurricane,1
+12021,Collier County,FL,0,0,0,0,0,1,0,0,Extreme hurricane,1
+12031,Duval County,FL,0,0,0,0,0,1,0,0,Extreme hurricane,1
+12033,Escambia County,FL,0,0,0,0,0,1,0,0,Extreme hurricane,1
+12053,Hernando County,FL,0,0,0,0,0,1,0,0,Extreme hurricane,1
+12057,Hillsborough County,FL,0,0,0,0,0,1,0,0,Extreme hurricane,1
+12061,Indian River County,FL,0,0,0,0,0,1,0,0,Extreme hurricane,1
+12071,Lee County,FL,0,0,0,0,0,1,0,0,Extreme hurricane,1
+12081,Manatee County,FL,0,0,0,0,0,1,0,0,Extreme hurricane,1
+12085,Martin County,FL,0,0,0,0,0,1,0,0,Extreme hurricane,1
+12086,Miami-Dade County,FL,0,0,0,0,0,1,0,0,Extreme hurricane,1
+12087,Monroe County,FL,1,0,0,1,1,1,0,0,Protected land; Too little candidate land; Far from the grid; Extreme hurricane,4
+12091,Okaloosa County,FL,0,0,0,0,0,1,0,0,Extreme hurricane,1
+12095,Orange County,FL,0,0,0,0,0,1,0,0,Extreme hurricane,1
+12099,Palm Beach County,FL,0,0,0,0,0,1,0,0,Extreme hurricane,1
+12101,Pasco County,FL,0,0,0,0,0,1,0,0,Extreme hurricane,1
+12103,Pinellas County,FL,0,0,0,0,0,1,0,0,Extreme hurricane,1
+12105,Polk County,FL,0,0,0,0,0,1,0,0,Extreme hurricane,1
+12113,Santa Rosa County,FL,0,0,0,0,0,1,0,0,Extreme hurricane,1
+12115,Sarasota County,FL,0,0,0,0,0,1,0,0,Extreme hurricane,1
+12111,St. Lucie County,FL,0,0,0,0,0,1,0,0,Extreme hurricane,1
+12127,Volusia County,FL,0,0,0,0,0,1,0,0,Extreme hurricane,1
+12131,Walton County,FL,0,0,0,0,0,1,0,0,Extreme hurricane,1
+13051,Chatham County,GA,0,0,0,0,0,1,0,0,Extreme hurricane,1
+13063,Clayton County,GA,0,1,0,0,0,0,0,0,Active county moratorium,1
+13239,Quitman County,GA,0,0,0,0,1,0,0,0,Far from the grid,1
+13281,Towns County,GA,0,0,0,0,1,0,0,0,Far from the grid,1
+19005,Allamakee County,IA,0,0,0,0,1,0,0,0,Far from the grid,1
+19033,Cerro Gordo County,IA,0,0,0,0,1,0,0,0,Far from the grid,1
+19053,Decatur County,IA,0,0,0,0,1,0,0,0,Far from the grid,1
+19069,Franklin County,IA,0,0,0,0,1,0,0,0,Far from the grid,1
+19083,Hardin County,IA,0,0,0,0,1,0,0,0,Far from the grid,1
+19117,Lucas County,IA,0,0,0,0,1,0,0,0,Far from the grid,1
+19171,Tama County,IA,0,0,0,0,1,0,0,0,Far from the grid,1
+19185,Wayne County,IA,0,0,0,0,1,0,0,0,Far from the grid,1
+16005,Bannock County,ID,0,0,0,0,0,0,0,1,Extreme water stress,1
+16013,Blaine County,ID,0,0,0,0,1,0,0,0,Far from the grid,1
+16021,Boundary County,ID,0,0,0,0,1,0,0,0,Far from the grid,1
+16023,Butte County,ID,0,0,0,0,0,0,0,1,Extreme water stress,1
+16031,Cassia County,ID,0,0,0,0,0,0,0,1,Extreme water stress,1
+16033,Clark County,ID,0,0,0,0,0,0,0,1,Extreme water stress,1
+16037,Custer County,ID,0,0,0,0,0,0,0,1,Extreme water stress,1
+16051,Jefferson County,ID,0,0,0,0,0,0,0,1,Extreme water stress,1
+16053,Jerome County,ID,0,0,0,0,0,0,0,1,Extreme water stress,1
+16059,Lemhi County,ID,0,0,0,0,1,0,0,0,Far from the grid,1
+16067,Minidoka County,ID,0,0,0,0,0,0,0,1,Extreme water stress,1
+16077,Power County,ID,0,0,0,0,0,0,0,1,Extreme water stress,1
+16085,Valley County,ID,0,0,0,0,1,0,0,0,Far from the grid,1
+17071,Henderson County,IL,0,0,0,0,1,0,0,0,Far from the grid,1
+20023,Cheyenne County,KS,0,0,0,0,1,0,0,1,Far from the grid; Extreme water stress,2
+20039,Decatur County,KS,0,0,0,0,0,0,0,1,Extreme water stress,1
+20041,Dickinson County,KS,0,0,0,0,0,0,0,1,Extreme water stress,1
+20051,Ellis County,KS,0,0,0,0,0,0,0,1,Extreme water stress,1
+20053,Ellsworth County,KS,0,0,0,0,0,0,0,1,Extreme water stress,1
+20055,Finney County,KS,0,0,0,0,0,0,0,1,Extreme water stress,1
+20057,Ford County,KS,0,0,0,0,0,0,0,1,Extreme water stress,1
+20063,Gove County,KS,0,0,0,0,0,0,0,1,Extreme water stress,1
+20065,Graham County,KS,0,0,0,0,1,0,0,1,Far from the grid; Extreme water stress,2
+20067,Grant County,KS,0,0,0,0,0,0,0,1,Extreme water stress,1
+20069,Gray County,KS,0,0,0,0,0,0,0,1,Extreme water stress,1
+20071,Greeley County,KS,0,0,0,0,1,0,0,1,Far from the grid; Extreme water stress,2
+20075,Hamilton County,KS,0,0,0,0,0,0,0,1,Extreme water stress,1
+20081,Haskell County,KS,0,0,0,0,0,0,0,1,Extreme water stress,1
+20083,Hodgeman County,KS,0,0,0,0,0,0,0,1,Extreme water stress,1
+20093,Kearny County,KS,0,0,0,0,0,0,0,1,Extreme water stress,1
+20105,Lincoln County,KS,0,0,0,0,0,0,0,1,Extreme water stress,1
+20109,Logan County,KS,0,0,0,0,0,0,0,1,Extreme water stress,1
+20117,Marshall County,KS,0,0,0,0,1,0,0,1,Far from the grid; Extreme water stress,2
+20119,Meade County,KS,0,0,0,0,0,0,0,1,Extreme water stress,1
+20123,Mitchell County,KS,0,0,0,0,0,0,0,1,Extreme water stress,1
+20129,Morton County,KS,0,0,0,0,0,0,0,1,Extreme water stress,1
+20131,Nemaha County,KS,0,0,0,0,1,0,0,0,Far from the grid,1
+20137,Norton County,KS,0,0,0,0,1,0,0,1,Far from the grid; Extreme water stress,2
+20141,Osborne County,KS,0,0,0,0,0,0,0,1,Extreme water stress,1
+20143,Ottawa County,KS,0,0,0,0,0,0,0,1,Extreme water stress,1
+20147,Phillips County,KS,0,0,0,0,0,0,0,1,Extreme water stress,1
+20153,Rawlins County,KS,0,0,0,0,0,0,0,1,Extreme water stress,1
+20163,Rooks County,KS,0,0,0,0,0,0,0,1,Extreme water stress,1
+20167,Russell County,KS,0,0,0,0,0,0,0,1,Extreme water stress,1
+20169,Saline County,KS,0,0,0,0,0,0,0,1,Extreme water stress,1
+20171,Scott County,KS,0,0,0,0,0,0,0,1,Extreme water stress,1
+20175,Seward County,KS,0,0,0,0,0,0,0,1,Extreme water stress,1
+20179,Sheridan County,KS,0,0,0,0,0,0,0,1,Extreme water stress,1
+20181,Sherman County,KS,0,0,0,0,0,0,0,1,Extreme water stress,1
+20183,Smith County,KS,0,0,0,0,0,0,0,1,Extreme water stress,1
+20187,Stanton County,KS,0,0,0,0,0,0,0,1,Extreme water stress,1
+20189,Stevens County,KS,0,0,0,0,0,0,0,1,Extreme water stress,1
+20193,Thomas County,KS,0,0,0,0,0,0,0,1,Extreme water stress,1
+20195,Trego County,KS,0,0,0,0,0,0,0,1,Extreme water stress,1
+20199,Wallace County,KS,0,0,0,0,1,0,0,1,Far from the grid; Extreme water stress,2
+20201,Washington County,KS,0,0,0,0,0,0,0,1,Extreme water stress,1
+20203,Wichita County,KS,0,0,0,0,0,0,0,1,Extreme water stress,1
+21001,Adair County,KY,0,0,0,0,1,0,0,0,Far from the grid,1
+21003,Allen County,KY,0,0,0,0,1,0,0,0,Far from the grid,1
+21009,Barren County,KY,0,0,0,0,1,0,0,0,Far from the grid,1
+21053,Clinton County,KY,0,0,0,0,1,0,0,0,Far from the grid,1
+21057,Cumberland County,KY,0,0,0,0,1,0,0,0,Far from the grid,1
+21061,Edmonson County,KY,0,0,0,0,1,0,0,0,Far from the grid,1
+21109,Jackson County,KY,0,0,0,0,1,0,0,0,Far from the grid,1
+21169,Metcalfe County,KY,0,0,0,0,1,0,0,0,Far from the grid,1
+21171,Monroe County,KY,0,0,0,0,1,0,0,0,Far from the grid,1
+21189,Owsley County,KY,0,0,0,0,1,0,0,0,Far from the grid,1
+21193,Perry County,KY,0,0,0,0,1,0,0,0,Far from the grid,1
+21227,Warren County,KY,0,0,0,0,1,0,0,0,Far from the grid,1
+21237,Wolfe County,KY,0,0,0,0,1,0,0,0,Far from the grid,1
+22019,Calcasieu Parish,LA,0,0,0,0,0,1,0,0,Extreme hurricane,1
+22021,Caldwell Parish,LA,0,0,0,0,1,0,0,0,Far from the grid,1
+22025,Catahoula Parish,LA,0,0,0,0,1,0,0,0,Far from the grid,1
+22029,Concordia Parish,LA,0,0,0,0,1,0,0,0,Far from the grid,1
+22033,East Baton Rouge Parish,LA,0,0,0,0,0,1,0,0,Extreme hurricane,1
+22051,Jefferson Parish,LA,0,0,0,0,0,1,0,0,Extreme hurricane,1
+22055,Lafayette Parish,LA,0,0,0,0,0,1,0,0,Extreme hurricane,1
+22071,Orleans Parish,LA,0,0,0,1,0,1,0,0,Too little candidate land; Extreme hurricane,2
+22103,St. Tammany Parish,LA,0,0,0,0,0,1,0,0,Extreme hurricane,1
+22109,Terrebonne Parish,LA,0,0,0,0,0,1,0,0,Extreme hurricane,1
+25017,Middlesex County,MA,0,0,0,0,0,1,0,0,Extreme hurricane,1
+25019,Nantucket County,MA,0,0,0,0,1,0,0,0,Far from the grid,1
+25025,Suffolk County,MA,0,0,0,1,0,0,0,0,Too little candidate land,1
+24510,Baltimore city,MD,0,0,0,1,0,0,0,0,Too little candidate land,1
+24009,Calvert County,MD,0,1,0,0,0,0,0,0,Active county moratorium,1
+23003,Aroostook County,ME,0,0,0,0,1,0,0,0,Far from the grid,1
+23007,Franklin County,ME,0,0,0,0,1,0,0,0,Far from the grid,1
+23021,Piscataquis County,ME,0,0,0,0,1,0,0,0,Far from the grid,1
+26001,Alcona County,MI,0,0,0,0,1,0,0,0,Far from the grid,1
+26003,Alger County,MI,0,0,0,0,1,0,0,0,Far from the grid,1
+26007,Alpena County,MI,0,0,0,0,1,0,0,0,Far from the grid,1
+26013,Baraga County,MI,0,0,0,0,1,0,0,0,Far from the grid,1
+26023,Branch County,MI,0,0,0,0,1,0,0,0,Far from the grid,1
+26031,Cheboygan County,MI,0,0,0,0,1,0,0,0,Far from the grid,1
+26033,Chippewa County,MI,0,0,0,0,1,0,0,0,Far from the grid,1
+26035,Clare County,MI,0,0,0,0,1,0,0,0,Far from the grid,1
+26053,Gogebic County,MI,0,0,0,0,1,0,0,0,Far from the grid,1
+26059,Hillsdale County,MI,0,0,0,0,1,0,0,0,Far from the grid,1
+26061,Houghton County,MI,0,0,0,0,1,0,0,0,Far from the grid,1
+26071,Iron County,MI,0,0,0,0,1,0,0,0,Far from the grid,1
+26083,Keweenaw County,MI,0,0,0,0,1,0,0,0,Far from the grid,1
+26095,Luce County,MI,1,0,0,0,1,0,0,0,Protected land; Far from the grid,2
+26097,Mackinac County,MI,0,0,0,0,1,0,0,0,Far from the grid,1
+26131,Ontonagon County,MI,0,0,0,0,1,0,0,0,Far from the grid,1
+26133,Osceola County,MI,0,0,0,0,1,0,0,0,Far from the grid,1
+26141,Presque Isle County,MI,0,0,0,0,1,0,0,0,Far from the grid,1
+26153,Schoolcraft County,MI,1,0,0,0,1,0,0,0,Protected land; Far from the grid,2
+27031,Cook County,MN,0,0,0,0,1,0,0,0,Far from the grid,1
+27047,Freeborn County,MN,0,0,0,0,1,0,0,0,Far from the grid,1
+27075,Lake County,MN,0,0,0,0,1,0,0,0,Far from the grid,1
+27089,Marshall County,MN,0,0,0,0,1,0,0,0,Far from the grid,1
+27113,Pennington County,MN,0,0,0,0,1,0,0,0,Far from the grid,1
+29001,Adair County,MO,0,0,0,0,1,0,0,0,Far from the grid,1
+29015,Benton County,MO,0,0,0,0,1,0,0,0,Far from the grid,1
+29067,Douglas County,MO,0,0,0,0,1,0,0,0,Far from the grid,1
+29069,Dunklin County,MO,0,0,0,0,0,0,0,1,Extreme water stress,1
+29079,Grundy County,MO,0,0,0,0,1,0,0,0,Far from the grid,1
+29083,Henry County,MO,0,0,0,0,1,0,0,0,Far from the grid,1
+29091,Howell County,MO,0,0,0,0,1,0,0,0,Far from the grid,1
+29117,Livingston County,MO,0,0,0,0,1,0,0,0,Far from the grid,1
+29129,Mercer County,MO,0,0,0,0,1,0,0,0,Far from the grid,1
+29141,Morgan County,MO,0,0,0,0,1,0,0,0,Far from the grid,1
+29149,Oregon County,MO,0,0,0,0,1,0,0,0,Far from the grid,1
+29153,Ozark County,MO,0,0,0,0,1,0,0,0,Far from the grid,1
+29171,Putnam County,MO,0,0,0,0,1,0,0,0,Far from the grid,1
+29197,Schuyler County,MO,0,0,0,0,1,0,0,0,Far from the grid,1
+29185,St. Clair County,MO,0,0,0,0,1,0,0,0,Far from the grid,1
+29510,St. Louis city,MO,0,0,0,1,0,0,0,0,Too little candidate land,1
+29207,Stoddard County,MO,0,0,0,0,0,0,0,1,Extreme water stress,1
+29211,Sullivan County,MO,0,0,0,0,1,0,0,0,Far from the grid,1
+29213,Taney County,MO,0,0,0,0,1,0,0,0,Far from the grid,1
+29215,Texas County,MO,0,0,0,0,1,0,0,0,Far from the grid,1
+29217,Vernon County,MO,0,0,0,0,1,0,0,0,Far from the grid,1
+28047,Harrison County,MS,0,0,0,0,0,1,0,0,Extreme hurricane,1
+28059,Jackson County,MS,0,0,0,0,0,1,0,0,Extreme hurricane,1
+28065,Jefferson Davis County,MS,0,0,0,0,1,0,0,0,Far from the grid,1
+28103,Noxubee County,MS,0,0,0,0,1,0,0,0,Far from the grid,1
+30011,Carter County,MT,0,0,0,0,1,0,0,0,Far from the grid,1
+30019,Daniels County,MT,0,0,0,0,1,0,0,0,Far from the grid,1
+30027,Fergus County,MT,0,0,0,0,1,0,0,0,Far from the grid,1
+30033,Garfield County,MT,0,0,0,0,1,0,0,0,Far from the grid,1
+30035,Glacier County,MT,0,0,0,0,0,0,0,1,Extreme water stress,1
+30039,Granite County,MT,0,0,0,0,0,0,0,1,Extreme water stress,1
+30041,Hill County,MT,0,0,0,0,0,0,0,1,Extreme water stress,1
+30051,Liberty County,MT,0,0,0,0,1,0,0,1,Far from the grid; Extreme water stress,2
+30057,Madison County,MT,0,0,0,0,1,0,0,0,Far from the grid,1
+30069,Petroleum County,MT,0,0,0,0,1,0,0,0,Far from the grid,1
+30073,Pondera County,MT,0,0,0,0,0,0,0,1,Extreme water stress,1
+30075,Powder River County,MT,0,0,0,0,1,0,0,0,Far from the grid,1
+30091,Sheridan County,MT,0,0,0,0,1,0,0,1,Far from the grid; Extreme water stress,2
+30101,Toole County,MT,0,0,0,0,0,0,0,1,Extreme water stress,1
+37019,Brunswick County,NC,0,0,0,0,0,1,0,0,Extreme hurricane,1
+37025,Cabarrus County,NC,0,0,0,0,0,0,0,1,Extreme water stress,1
+37031,Carteret County,NC,0,0,0,0,0,1,0,0,Extreme hurricane,1
+37039,Cherokee County,NC,0,0,0,0,1,0,0,0,Far from the grid,1
+37043,Clay County,NC,0,0,0,0,1,0,0,0,Far from the grid,1
+37049,Craven County,NC,0,0,0,0,0,1,0,0,Extreme hurricane,1
+37055,Dare County,NC,1,0,0,0,0,1,0,0,Protected land; Extreme hurricane,2
+37075,Graham County,NC,0,0,0,0,1,0,0,0,Far from the grid,1
+37095,Hyde County,NC,0,0,0,0,1,0,0,0,Far from the grid,1
+37129,New Hanover County,NC,0,0,0,0,0,1,0,0,Extreme hurricane,1
+37133,Onslow County,NC,0,0,0,0,0,1,0,0,Extreme hurricane,1
+37167,Stanly County,NC,0,0,0,0,0,0,0,1,Extreme water stress,1
+37173,Swain County,NC,1,0,0,0,0,0,0,0,Protected land,1
+38009,Bottineau County,ND,0,0,0,0,1,0,0,0,Far from the grid,1
+38019,Cavalier County,ND,0,0,0,0,1,0,0,0,Far from the grid,1
+38075,Renville County,ND,0,0,0,0,1,0,0,0,Far from the grid,1
+31001,Adams County,NE,0,0,0,0,0,0,0,1,Extreme water stress,1
+31005,Arthur County,NE,0,0,0,0,0,0,0,1,Extreme water stress,1
+31007,Banner County,NE,0,0,0,0,0,0,0,1,Extreme water stress,1
+31009,Blaine County,NE,0,0,0,0,1,0,0,0,Far from the grid,1
+31013,Box Butte County,NE,0,0,0,0,1,0,0,1,Far from the grid; Extreme water stress,2
+31017,Brown County,NE,0,0,0,0,1,0,0,1,Far from the grid; Extreme water stress,2
+31029,Chase County,NE,0,0,0,0,1,0,0,1,Far from the grid; Extreme water stress,2
+31031,Cherry County,NE,0,0,0,0,1,0,0,1,Far from the grid; Extreme water stress,2
+31033,Cheyenne County,NE,0,0,0,0,0,0,0,1,Extreme water stress,1
+31035,Clay County,NE,0,0,0,0,0,0,0,1,Extreme water stress,1
+31039,Cuming County,NE,0,0,0,0,0,0,0,1,Extreme water stress,1
+31049,Deuel County,NE,0,0,0,0,0,0,0,1,Extreme water stress,1
+31057,Dundy County,NE,0,0,0,0,1,0,0,1,Far from the grid; Extreme water stress,2
+31059,Fillmore County,NE,0,0,0,0,0,0,0,1,Extreme water stress,1
+31063,Frontier County,NE,0,0,0,0,0,0,0,1,Extreme water stress,1
+31065,Furnas County,NE,0,0,0,0,1,0,0,1,Far from the grid; Extreme water stress,2
+31067,Gage County,NE,0,0,0,0,0,0,0,1,Extreme water stress,1
+31069,Garden County,NE,0,0,0,0,0,0,0,1,Extreme water stress,1
+31071,Garfield County,NE,0,0,0,0,1,0,0,0,Far from the grid,1
+31073,Gosper County,NE,0,0,0,0,0,0,0,1,Extreme water stress,1
+31075,Grant County,NE,0,0,0,0,1,0,0,0,Far from the grid,1
+31081,Hamilton County,NE,0,0,0,0,0,0,0,1,Extreme water stress,1
+31085,Hayes County,NE,0,0,0,0,0,0,0,1,Extreme water stress,1
+31087,Hitchcock County,NE,0,0,0,0,0,0,0,1,Extreme water stress,1
+31089,Holt County,NE,0,0,0,0,0,0,0,1,Extreme water stress,1
+31091,Hooker County,NE,0,0,0,0,1,0,0,0,Far from the grid,1
+31095,Jefferson County,NE,0,0,0,0,0,0,0,1,Extreme water stress,1
+31099,Kearney County,NE,0,0,0,0,0,0,0,1,Extreme water stress,1
+31101,Keith County,NE,0,0,0,0,0,0,0,1,Extreme water stress,1
+31103,Keya Paha County,NE,0,0,0,0,1,0,0,1,Far from the grid; Extreme water stress,2
+31105,Kimball County,NE,0,0,0,0,0,0,0,1,Extreme water stress,1
+31111,Lincoln County,NE,0,0,0,0,0,0,0,1,Extreme water stress,1
+31115,Loup County,NE,0,0,0,0,1,0,0,0,Far from the grid,1
+31119,Madison County,NE,0,0,0,0,0,0,0,1,Extreme water stress,1
+31117,McPherson County,NE,0,0,0,0,1,0,0,1,Far from the grid; Extreme water stress,2
+31123,Morrill County,NE,0,0,0,0,0,0,0,1,Extreme water stress,1
+31129,Nuckolls County,NE,0,0,0,0,0,0,0,1,Extreme water stress,1
+31135,Perkins County,NE,0,0,0,0,0,0,0,1,Extreme water stress,1
+31139,Pierce County,NE,0,0,0,0,0,0,0,1,Extreme water stress,1
+31143,Polk County,NE,0,0,0,0,0,0,0,1,Extreme water stress,1
+31145,Red Willow County,NE,0,0,0,0,0,0,0,1,Extreme water stress,1
+31149,Rock County,NE,0,0,0,0,1,0,0,1,Far from the grid; Extreme water stress,2
+31151,Saline County,NE,0,0,0,0,0,0,0,1,Extreme water stress,1
+31157,Scotts Bluff County,NE,0,0,0,0,0,0,0,1,Extreme water stress,1
+31161,Sheridan County,NE,0,0,0,0,1,0,0,0,Far from the grid,1
+31167,Stanton County,NE,0,0,0,0,0,0,0,1,Extreme water stress,1
+31169,Thayer County,NE,0,0,0,0,0,0,0,1,Extreme water stress,1
+31171,Thomas County,NE,0,0,0,0,1,0,0,0,Far from the grid,1
+31175,Valley County,NE,0,0,0,0,1,0,0,0,Far from the grid,1
+31179,Wayne County,NE,0,0,0,0,0,0,0,1,Extreme water stress,1
+31185,York County,NE,0,0,0,0,0,0,0,1,Extreme water stress,1
+34001,Atlantic County,NJ,0,0,0,0,0,0,1,0,Extreme coastal flood,1
+34003,Bergen County,NJ,0,0,0,1,0,0,1,0,Too little candidate land; Extreme coastal flood,2
+34009,Cape May County,NJ,0,0,0,0,0,0,1,0,Extreme coastal flood,1
+34011,Cumberland County,NJ,0,0,0,0,0,0,1,0,Extreme coastal flood,1
+34013,Essex County,NJ,0,0,0,1,0,0,0,0,Too little candidate land,1
+34017,Hudson County,NJ,0,0,0,1,0,0,1,0,Too little candidate land; Extreme coastal flood,2
+34023,Middlesex County,NJ,0,0,0,0,0,0,1,0,Extreme coastal flood,1
+34025,Monmouth County,NJ,0,0,0,0,0,0,1,0,Extreme coastal flood,1
+34029,Ocean County,NJ,0,0,0,0,0,0,1,0,Extreme coastal flood,1
+34031,Passaic County,NJ,0,0,0,1,0,0,0,0,Too little candidate land,1
+34039,Union County,NJ,0,0,0,1,0,0,0,0,Too little candidate land,1
+35005,Chaves County,NM,0,0,0,0,0,0,0,1,Extreme water stress,1
+35006,Cibola County,NM,0,0,0,0,0,0,0,1,Extreme water stress,1
+35007,Colfax County,NM,0,0,0,0,0,0,0,1,Extreme water stress,1
+35009,Curry County,NM,0,0,0,0,0,0,0,1,Extreme water stress,1
+35011,De Baca County,NM,0,0,0,0,0,0,0,1,Extreme water stress,1
+35013,Doña Ana County,NM,0,0,0,0,0,0,0,1,Extreme water stress,1
+35015,Eddy County,NM,0,0,0,0,0,0,0,1,Extreme water stress,1
+35017,Grant County,NM,0,0,0,0,1,0,0,1,Far from the grid; Extreme water stress,2
+35019,Guadalupe County,NM,0,0,0,0,0,0,0,1,Extreme water stress,1
+35021,Harding County,NM,0,0,0,0,1,0,0,1,Far from the grid; Extreme water stress,2
+35023,Hidalgo County,NM,0,0,0,0,0,0,0,1,Extreme water stress,1
+35025,Lea County,NM,0,0,0,0,0,0,0,1,Extreme water stress,1
+35027,Lincoln County,NM,0,0,0,0,1,0,0,1,Far from the grid; Extreme water stress,2
+35029,Luna County,NM,0,0,0,0,0,0,0,1,Extreme water stress,1
+35033,Mora County,NM,0,0,0,0,1,0,0,1,Far from the grid; Extreme water stress,2
+35035,Otero County,NM,0,0,0,0,0,0,0,1,Extreme water stress,1
+35037,Quay County,NM,0,0,0,0,1,0,0,1,Far from the grid; Extreme water stress,2
+35041,Roosevelt County,NM,0,0,0,0,0,0,0,1,Extreme water stress,1
+35047,San Miguel County,NM,0,0,0,0,1,0,0,1,Far from the grid; Extreme water stress,2
+35049,Santa Fe County,NM,0,1,0,0,0,0,0,0,Active county moratorium,1
+35051,Sierra County,NM,0,0,0,0,0,0,0,1,Extreme water stress,1
+35057,Torrance County,NM,0,0,0,0,0,0,0,1,Extreme water stress,1
+35059,Union County,NM,0,0,0,0,1,0,0,0,Far from the grid,1
+32510,Carson City,NV,0,0,0,0,0,0,0,1,Extreme water stress,1
+32001,Churchill County,NV,0,0,0,0,0,0,0,1,Extreme water stress,1
+32005,Douglas County,NV,0,0,0,0,0,0,0,1,Extreme water stress,1
+32009,Esmeralda County,NV,0,0,0,0,1,0,0,1,Far from the grid; Extreme water stress,2
+32011,Eureka County,NV,0,0,0,0,0,0,0,1,Extreme water stress,1
+32013,Humboldt County,NV,0,0,0,0,0,0,0,1,Extreme water stress,1
+32015,Lander County,NV,0,0,0,0,0,0,0,1,Extreme water stress,1
+32017,Lincoln County,NV,0,0,0,0,0,0,0,1,Extreme water stress,1
+32023,Nye County,NV,0,0,0,0,0,0,0,1,Extreme water stress,1
+36001,Albany County,NY,0,0,1,0,0,0,0,0,Statewide moratorium,1
+36003,Allegany County,NY,0,0,1,0,0,0,0,0,Statewide moratorium,1
+36005,Bronx County,NY,0,0,1,1,0,0,0,0,Statewide moratorium; Too little candidate land,2
+36007,Broome County,NY,0,0,1,0,0,0,0,0,Statewide moratorium,1
+36009,Cattaraugus County,NY,0,0,1,0,0,0,0,0,Statewide moratorium,1
+36011,Cayuga County,NY,0,0,1,0,0,0,0,0,Statewide moratorium,1
+36013,Chautauqua County,NY,0,0,1,0,0,0,0,0,Statewide moratorium,1
+36015,Chemung County,NY,0,0,1,0,0,0,0,0,Statewide moratorium,1
+36017,Chenango County,NY,0,0,1,0,0,0,0,0,Statewide moratorium,1
+36019,Clinton County,NY,0,0,1,0,0,0,0,0,Statewide moratorium,1
+36021,Columbia County,NY,0,0,1,0,0,0,0,0,Statewide moratorium,1
+36023,Cortland County,NY,0,0,1,0,0,0,0,0,Statewide moratorium,1
+36025,Delaware County,NY,0,0,1,0,0,0,0,0,Statewide moratorium,1
+36027,Dutchess County,NY,0,0,1,0,0,0,0,0,Statewide moratorium,1
+36029,Erie County,NY,0,0,1,0,0,0,0,0,Statewide moratorium,1
+36031,Essex County,NY,1,0,1,0,0,0,0,0,Protected land; Statewide moratorium,2
+36033,Franklin County,NY,0,0,1,0,0,0,0,0,Statewide moratorium,1
+36035,Fulton County,NY,0,0,1,0,0,0,0,0,Statewide moratorium,1
+36037,Genesee County,NY,0,0,1,0,0,0,0,0,Statewide moratorium,1
+36039,Greene County,NY,0,0,1,0,0,0,0,0,Statewide moratorium,1
+36041,Hamilton County,NY,1,0,1,0,1,0,0,0,Protected land; Statewide moratorium; Far from the grid,3
+36043,Herkimer County,NY,0,0,1,0,0,0,0,0,Statewide moratorium,1
+36045,Jefferson County,NY,0,0,1,0,0,0,0,0,Statewide moratorium,1
+36047,Kings County,NY,0,0,1,1,0,1,1,0,Statewide moratorium; Too little candidate land; Extreme hurricane; Extreme coastal flood,4
+36049,Lewis County,NY,0,0,1,0,0,0,0,0,Statewide moratorium,1
+36051,Livingston County,NY,0,0,1,0,0,0,0,0,Statewide moratorium,1
+36053,Madison County,NY,0,0,1,0,0,0,0,0,Statewide moratorium,1
+36055,Monroe County,NY,0,0,1,0,0,0,0,0,Statewide moratorium,1
+36057,Montgomery County,NY,0,0,1,0,0,0,0,0,Statewide moratorium,1
+36059,Nassau County,NY,0,0,1,0,0,1,0,0,Statewide moratorium; Extreme hurricane,2
+36061,New York County,NY,0,0,1,1,0,0,0,0,Statewide moratorium; Too little candidate land,2
+36063,Niagara County,NY,0,0,1,0,0,0,0,0,Statewide moratorium,1
+36065,Oneida County,NY,0,0,1,0,0,0,0,0,Statewide moratorium,1
+36067,Onondaga County,NY,0,0,1,0,0,0,0,0,Statewide moratorium,1
+36069,Ontario County,NY,0,0,1,0,0,0,0,0,Statewide moratorium,1
+36071,Orange County,NY,0,0,1,0,0,0,0,0,Statewide moratorium,1
+36073,Orleans County,NY,0,0,1,0,0,0,0,0,Statewide moratorium,1
+36075,Oswego County,NY,0,0,1,0,0,0,0,0,Statewide moratorium,1
+36077,Otsego County,NY,0,0,1,0,0,0,0,0,Statewide moratorium,1
+36079,Putnam County,NY,0,0,1,0,0,0,0,0,Statewide moratorium,1
+36081,Queens County,NY,0,0,1,1,0,0,0,0,Statewide moratorium; Too little candidate land,2
+36083,Rensselaer County,NY,0,0,1,0,0,0,0,0,Statewide moratorium,1
+36085,Richmond County,NY,0,0,1,0,0,0,0,0,Statewide moratorium,1
+36087,Rockland County,NY,0,0,1,1,0,0,0,0,Statewide moratorium; Too little candidate land,2
+36091,Saratoga County,NY,0,0,1,0,0,0,0,0,Statewide moratorium,1
+36093,Schenectady County,NY,0,0,1,0,0,0,0,0,Statewide moratorium,1
+36095,Schoharie County,NY,0,0,1,0,0,0,0,0,Statewide moratorium,1
+36097,Schuyler County,NY,0,0,1,0,0,0,0,0,Statewide moratorium,1
+36099,Seneca County,NY,0,0,1,0,0,0,0,0,Statewide moratorium,1
+36089,St. Lawrence County,NY,0,0,1,0,0,0,0,0,Statewide moratorium,1
+36101,Steuben County,NY,0,0,1,0,0,0,0,0,Statewide moratorium,1
+36103,Suffolk County,NY,0,0,1,0,0,1,1,0,Statewide moratorium; Extreme hurricane; Extreme coastal flood,3
+36105,Sullivan County,NY,0,0,1,0,0,0,0,0,Statewide moratorium,1
+36107,Tioga County,NY,0,0,1,0,0,0,0,0,Statewide moratorium,1
+36109,Tompkins County,NY,0,0,1,0,0,0,0,0,Statewide moratorium,1
+36111,Ulster County,NY,0,0,1,0,0,0,0,0,Statewide moratorium,1
+36113,Warren County,NY,0,0,1,0,1,0,0,0,Statewide moratorium; Far from the grid,2
+36115,Washington County,NY,0,0,1,0,0,0,0,0,Statewide moratorium,1
+36117,Wayne County,NY,0,0,1,0,0,0,0,0,Statewide moratorium,1
+36119,Westchester County,NY,0,0,1,0,0,0,0,0,Statewide moratorium,1
+36121,Wyoming County,NY,0,0,1,0,0,0,0,0,Statewide moratorium,1
+36123,Yates County,NY,0,0,1,0,0,0,0,0,Statewide moratorium,1
+40009,Beckham County,OK,0,0,0,0,0,0,0,1,Extreme water stress,1
+40025,Cimarron County,OK,0,0,0,0,1,0,0,0,Far from the grid,1
+40049,Garvin County,OK,0,0,0,0,1,0,0,0,Far from the grid,1
+40055,Greer County,OK,0,0,0,0,0,0,0,1,Extreme water stress,1
+40057,Harmon County,OK,0,0,0,0,0,0,0,1,Extreme water stress,1
+40065,Jackson County,OK,0,0,0,0,0,0,0,1,Extreme water stress,1
+40077,Latimer County,OK,0,0,0,0,1,0,0,0,Far from the grid,1
+41007,Clatsop County,OR,0,0,0,0,0,0,1,0,Extreme coastal flood,1
+41011,Coos County,OR,0,0,0,0,0,0,1,0,Extreme coastal flood,1
+41023,Grant County,OR,0,0,0,0,1,0,0,0,Far from the grid,1
+41025,Harney County,OR,0,0,0,0,0,0,0,1,Extreme water stress,1
+41037,Lake County,OR,0,0,0,0,0,0,0,1,Extreme water stress,1
+41069,Wheeler County,OR,0,0,0,0,1,0,0,0,Far from the grid,1
+42101,Philadelphia County,PA,0,0,0,1,0,0,1,0,Too little candidate land; Extreme coastal flood,2
+44001,Bristol County,RI,0,0,0,1,0,0,0,0,Too little candidate land,1
+45013,Beaufort County,SC,0,0,0,0,0,1,0,0,Extreme hurricane,1
+45015,Berkeley County,SC,0,0,0,0,0,1,0,0,Extreme hurricane,1
+45019,Charleston County,SC,0,0,0,0,0,1,0,0,Extreme hurricane,1
+45035,Dorchester County,SC,0,0,0,0,0,1,0,0,Extreme hurricane,1
+45043,Georgetown County,SC,0,0,0,0,0,1,0,0,Extreme hurricane,1
+45051,Horry County,SC,0,0,0,0,0,1,0,0,Extreme hurricane,1
+46007,Bennett County,SD,0,0,0,0,1,0,0,0,Far from the grid,1
+46031,Corson County,SD,0,0,0,0,1,0,0,0,Far from the grid,1
+46041,Dewey County,SD,0,0,0,0,1,0,0,0,Far from the grid,1
+46045,Edmunds County,SD,1,0,0,0,0,0,0,0,Protected land,1
+46049,Faulk County,SD,1,0,0,0,0,0,0,0,Protected land,1
+46063,Harding County,SD,0,0,0,0,1,0,0,0,Far from the grid,1
+46075,Jones County,SD,0,0,0,0,1,0,0,0,Far from the grid,1
+46089,McPherson County,SD,1,0,0,0,0,0,0,0,Protected land,1
+46095,Mellette County,SD,0,0,0,0,1,0,0,0,Far from the grid,1
+46102,Oglala Lakota County,SD,0,0,0,0,1,0,0,0,Far from the grid,1
+46121,Todd County,SD,0,0,0,0,1,0,0,0,Far from the grid,1
+46123,Tripp County,SD,0,0,0,0,1,0,0,0,Far from the grid,1
+46137,Ziebach County,SD,0,0,0,0,1,0,0,0,Far from the grid,1
+47027,Clay County,TN,0,0,0,0,1,0,0,0,Far from the grid,1
+47071,Hardin County,TN,0,0,0,0,1,0,0,0,Far from the grid,1
+47109,McNairy County,TN,0,0,0,0,1,0,0,0,Far from the grid,1
+47137,Pickett County,TN,0,0,0,0,1,0,0,0,Far from the grid,1
+47139,Polk County,TN,1,0,0,0,0,0,0,0,Protected land,1
+47151,Scott County,TN,0,0,0,0,1,0,0,0,Far from the grid,1
+47171,Unicoi County,TN,1,0,0,0,0,0,0,0,Protected land,1
+47181,Wayne County,TN,0,0,0,0,1,0,0,0,Far from the grid,1
+48003,Andrews County,TX,0,0,0,0,0,0,0,1,Extreme water stress,1
+48011,Armstrong County,TX,0,0,0,0,0,0,0,1,Extreme water stress,1
+48017,Bailey County,TX,0,0,0,0,0,0,0,1,Extreme water stress,1
+48033,Borden County,TX,0,0,0,0,0,0,0,1,Extreme water stress,1
+48039,Brazoria County,TX,0,0,0,0,0,1,0,0,Extreme hurricane,1
+48043,Brewster County,TX,0,0,0,0,1,0,0,0,Far from the grid,1
+48045,Briscoe County,TX,0,0,0,0,0,0,0,1,Extreme water stress,1
+48061,Cameron County,TX,0,0,0,0,0,1,1,1,Extreme hurricane; Extreme coastal flood; Extreme water stress,3
+48069,Castro County,TX,0,0,0,0,0,0,0,1,Extreme water stress,1
+48075,Childress County,TX,0,0,0,0,0,0,0,1,Extreme water stress,1
+48079,Cochran County,TX,0,0,0,0,0,0,0,1,Extreme water stress,1
+48087,Collingsworth County,TX,0,0,0,0,0,0,0,1,Extreme water stress,1
+48103,Crane County,TX,0,0,0,0,0,0,0,1,Extreme water stress,1
+48107,Crosby County,TX,0,0,0,0,0,0,0,1,Extreme water stress,1
+48109,Culberson County,TX,0,0,0,0,1,0,0,1,Far from the grid; Extreme water stress,2
+48111,Dallam County,TX,0,0,0,0,1,0,0,0,Far from the grid,1
+48115,Dawson County,TX,0,0,0,0,0,0,0,1,Extreme water stress,1
+48117,Deaf Smith County,TX,0,0,0,0,0,0,0,1,Extreme water stress,1
+48125,Dickens County,TX,0,0,0,0,0,0,0,1,Extreme water stress,1
+48127,Dimmit County,TX,0,0,0,0,1,0,0,0,Far from the grid,1
+48129,Donley County,TX,0,0,0,0,0,0,0,1,Extreme water stress,1
+48135,Ector County,TX,0,0,0,0,0,0,0,1,Extreme water stress,1
+48137,Edwards County,TX,0,0,0,0,1,0,0,0,Far from the grid,1
+48153,Floyd County,TX,0,0,0,0,0,0,0,1,Extreme water stress,1
+48157,Fort Bend County,TX,0,0,0,0,0,1,0,0,Extreme hurricane,1
+48165,Gaines County,TX,0,0,0,0,0,0,0,1,Extreme water stress,1
+48167,Galveston County,TX,0,0,0,0,0,1,0,0,Extreme hurricane,1
+48169,Garza County,TX,0,0,0,0,0,0,0,1,Extreme water stress,1
+48189,Hale County,TX,0,0,0,0,0,0,0,1,Extreme water stress,1
+48191,Hall County,TX,0,0,0,0,0,0,0,1,Extreme water stress,1
+48197,Hardeman County,TX,0,0,0,0,0,0,0,1,Extreme water stress,1
+48201,Harris County,TX,0,0,0,0,0,1,0,0,Extreme hurricane,1
+48205,Hartley County,TX,0,0,0,0,1,0,0,0,Far from the grid,1
+48215,Hidalgo County,TX,0,0,0,0,0,1,0,1,Extreme hurricane; Extreme water stress,2
+48217,Hill County,TX,0,1,0,0,0,0,0,0,Active county moratorium,1
+48219,Hockley County,TX,0,0,0,0,0,0,0,1,Extreme water stress,1
+48227,Howard County,TX,0,0,0,0,0,0,0,1,Extreme water stress,1
+48229,Hudspeth County,TX,0,0,0,0,1,0,0,1,Far from the grid; Extreme water stress,2
+48243,Jeff Davis County,TX,0,0,0,0,1,0,0,1,Far from the grid; Extreme water stress,2
+48245,Jefferson County,TX,0,0,0,0,0,1,0,0,Extreme hurricane,1
+48263,Kent County,TX,0,0,0,0,0,0,0,1,Extreme water stress,1
+48271,Kinney County,TX,0,0,0,0,1,0,0,0,Far from the grid,1
+48279,Lamb County,TX,0,0,0,0,0,0,0,1,Extreme water stress,1
+48299,Llano County,TX,0,0,0,0,1,0,0,0,Far from the grid,1
+48301,Loving County,TX,0,0,0,0,0,0,0,1,Extreme water stress,1
+48303,Lubbock County,TX,0,0,0,0,0,0,0,1,Extreme water stress,1
+48305,Lynn County,TX,0,0,0,0,0,0,0,1,Extreme water stress,1
+48317,Martin County,TX,0,0,0,0,0,0,0,1,Extreme water stress,1
+48323,Maverick County,TX,0,0,0,0,1,0,0,0,Far from the grid,1
+48329,Midland County,TX,0,0,0,0,0,0,0,1,Extreme water stress,1
+48345,Motley County,TX,0,0,0,0,0,0,0,1,Extreme water stress,1
+48355,Nueces County,TX,0,0,0,0,0,1,0,0,Extreme hurricane,1
+48369,Parmer County,TX,0,0,0,0,0,0,0,1,Extreme water stress,1
+48371,Pecos County,TX,0,0,0,0,0,0,0,1,Extreme water stress,1
+48377,Presidio County,TX,0,0,0,0,1,0,0,0,Far from the grid,1
+48381,Randall County,TX,0,0,0,0,0,0,0,1,Extreme water stress,1
+48385,Real County,TX,0,0,0,0,1,0,0,0,Far from the grid,1
+48389,Reeves County,TX,0,0,0,0,1,0,0,1,Far from the grid; Extreme water stress,2
+48415,Scurry County,TX,0,0,0,0,0,0,0,1,Extreme water stress,1
+48433,Stonewall County,TX,0,0,0,0,0,0,0,1,Extreme water stress,1
+48437,Swisher County,TX,0,0,0,0,0,0,0,1,Extreme water stress,1
+48443,Terrell County,TX,0,0,0,0,0,0,0,1,Extreme water stress,1
+48445,Terry County,TX,0,0,0,0,0,0,0,1,Extreme water stress,1
+48465,Val Verde County,TX,0,0,0,0,1,0,0,0,Far from the grid,1
+48475,Ward County,TX,0,0,0,0,0,0,0,1,Extreme water stress,1
+48483,Wheeler County,TX,0,0,0,0,0,0,0,1,Extreme water stress,1
+48489,Willacy County,TX,0,0,0,0,0,0,0,1,Extreme water stress,1
+48495,Winkler County,TX,0,0,0,0,0,0,0,1,Extreme water stress,1
+48501,Yoakum County,TX,0,0,0,0,0,0,0,1,Extreme water stress,1
+48507,Zavala County,TX,0,0,0,0,1,0,0,0,Far from the grid,1
+49025,Kane County,UT,1,0,0,0,0,0,0,0,Protected land,1
+49031,Piute County,UT,0,0,0,0,0,0,0,1,Extreme water stress,1
+49053,Washington County,UT,0,0,0,0,0,0,0,1,Extreme water stress,1
+51001,Accomack County,VA,0,0,0,0,1,0,0,0,Far from the grid,1
+51510,Alexandria city,VA,0,0,0,1,0,0,0,0,Too little candidate land,1
+51013,Arlington County,VA,0,0,0,1,0,0,0,0,Too little candidate land,1
+51520,Bristol city,VA,0,0,0,1,0,0,0,0,Too little candidate land,1
+51530,Buena Vista city,VA,0,0,0,1,0,0,0,0,Too little candidate land,1
+51540,Charlottesville city,VA,0,0,0,1,0,0,0,0,Too little candidate land,1
+51570,Colonial Heights city,VA,0,0,0,1,0,0,0,0,Too little candidate land,1
+51580,Covington city,VA,0,0,0,1,0,0,0,0,Too little candidate land,1
+51595,Emporia city,VA,0,0,0,1,0,0,0,0,Too little candidate land,1
+51059,Fairfax County,VA,0,0,0,0,0,1,0,0,Extreme hurricane,1
+51600,Fairfax city,VA,0,0,0,1,0,0,0,0,Too little candidate land,1
+51610,Falls Church city,VA,0,0,0,1,0,0,0,0,Too little candidate land,1
+51620,Franklin city,VA,0,0,0,1,0,0,0,0,Too little candidate land,1
+51630,Fredericksburg city,VA,0,0,0,1,0,0,0,0,Too little candidate land,1
+51640,Galax city,VA,0,0,0,1,0,0,0,0,Too little candidate land,1
+51650,Hampton city,VA,0,0,0,1,0,0,0,0,Too little candidate land,1
+51660,Harrisonburg city,VA,0,0,0,1,0,0,0,0,Too little candidate land,1
+51670,Hopewell city,VA,0,0,0,1,0,0,0,0,Too little candidate land,1
+51678,Lexington city,VA,0,0,0,1,0,0,0,0,Too little candidate land,1
+51685,Manassas Park city,VA,0,0,0,1,0,0,0,0,Too little candidate land,1
+51683,Manassas city,VA,0,0,0,1,0,0,0,0,Too little candidate land,1
+51690,Martinsville city,VA,0,0,0,1,0,0,0,0,Too little candidate land,1
+51700,Newport News city,VA,0,0,0,1,0,0,0,0,Too little candidate land,1
+51710,Norfolk city,VA,0,0,0,1,0,0,0,0,Too little candidate land,1
+51720,Norton city,VA,0,0,0,1,0,0,0,0,Too little candidate land,1
+51730,Petersburg city,VA,0,0,0,1,0,0,0,0,Too little candidate land,1
+51735,Poquoson city,VA,0,0,0,1,0,0,0,0,Too little candidate land,1
+51750,Radford city,VA,0,0,0,1,0,0,0,0,Too little candidate land,1
+51760,Richmond city,VA,0,0,0,1,0,0,0,0,Too little candidate land,1
+51770,Roanoke city,VA,0,0,0,1,0,0,0,0,Too little candidate land,1
+51775,Salem city,VA,0,0,0,1,0,0,0,0,Too little candidate land,1
+51800,Suffolk city,VA,0,1,0,0,0,0,0,0,Active county moratorium,1
+51820,Waynesboro city,VA,0,0,0,1,0,0,0,0,Too little candidate land,1
+51830,Williamsburg city,VA,0,0,0,1,0,0,0,0,Too little candidate land,1
+51840,Winchester city,VA,0,0,0,1,0,0,0,0,Too little candidate land,1
+50015,Lamoille County,VT,0,0,0,0,1,0,0,0,Far from the grid,1
+53027,Grays Harbor County,WA,0,0,0,0,0,0,1,0,Extreme coastal flood,1
+53031,Jefferson County,WA,1,0,0,0,0,0,0,0,Protected land,1
+53055,San Juan County,WA,1,0,0,0,0,0,0,0,Protected land,1
+55001,Adams County,WI,0,0,0,0,1,0,0,0,Far from the grid,1
+55003,Ashland County,WI,0,0,0,0,1,0,0,0,Far from the grid,1
+55007,Bayfield County,WI,0,0,0,0,1,0,0,0,Far from the grid,1
+55023,Crawford County,WI,0,0,0,0,1,0,0,0,Far from the grid,1
+55029,Door County,WI,0,0,0,0,1,0,0,0,Far from the grid,1
+55041,Forest County,WI,0,0,0,0,1,0,0,0,Far from the grid,1
+55051,Iron County,WI,0,0,0,0,1,0,0,0,Far from the grid,1
+55057,Juneau County,WI,0,0,0,0,1,0,0,0,Far from the grid,1
+55081,Monroe County,WI,0,0,0,0,1,0,0,0,Far from the grid,1
+55085,Oneida County,WI,0,0,0,0,1,0,0,0,Far from the grid,1
+55099,Price County,WI,0,0,0,0,1,0,0,0,Far from the grid,1
+55103,Richland County,WI,0,0,0,0,1,0,0,0,Far from the grid,1
+55123,Vernon County,WI,0,0,0,0,1,0,0,0,Far from the grid,1
+55125,Vilas County,WI,0,0,0,0,1,0,0,0,Far from the grid,1
+54007,Braxton County,WV,0,0,0,0,1,0,0,0,Far from the grid,1
+54025,Greenbrier County,WV,0,0,0,0,1,0,0,0,Far from the grid,1
+54067,Nicholas County,WV,0,0,0,0,1,0,0,0,Far from the grid,1
+54101,Webster County,WV,0,0,0,0,1,0,0,0,Far from the grid,1
+56005,Campbell County,WY,0,0,0,0,0,0,0,1,Extreme water stress,1
+56015,Goshen County,WY,0,0,0,0,0,0,0,1,Extreme water stress,1
+56019,Johnson County,WY,0,0,0,0,0,0,0,1,Extreme water stress,1
+56021,Laramie County,WY,0,0,0,0,0,0,0,1,Extreme water stress,1
+56027,Niobrara County,WY,0,0,0,0,0,0,0,1,Extreme water stress,1
+56029,Park County,WY,1,0,0,0,0,0,0,0,Protected land,1
+56039,Teton County,WY,1,0,0,0,1,0,0,0,Protected land; Far from the grid,2
+56045,Weston County,WY,0,0,0,0,0,0,0,1,Extreme water stress,1
